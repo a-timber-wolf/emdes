@@ -26,6 +26,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d7eac86c-ec80-4871-bd6e-dd6935b3bb16" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/img/ShufflingFigureOne.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/ShufflingFigureTwo.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/logoTitle.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/views/index.html" afterDir="false" />
@@ -59,19 +62,6 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
-  <component name="RunManager">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -81,6 +71,10 @@
       <option name="presentableId" value="Default" />
       <updated>1612421295631</updated>
       <workItem from="1612421302293" duration="1828000" />
+      <workItem from="1612421302293" duration="2472000" />
+      <workItem from="1612428085318" duration="5066000" />
+      <workItem from="1612486943207" duration="102000" />
+      <workItem from="1612488652718" duration="13930000" />
     </task>
     <servers />
   </component>
@@ -116,5 +110,11 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="727" y="229" key="git4idea.branch.GitSmartOperationDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1612489355959" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="768" y="175" width="672" height="684" key="search.everywhere.popup" timestamp="1612495607117">
+      <screen x="0" y="0" width="1440" height="860" />
+    </state>
+    <state x="768" y="175" width="672" height="684" key="search.everywhere.popup/0.0.1440.860@0.0.1440.860" timestamp="1612495607117" />
   </component>
 </project>
