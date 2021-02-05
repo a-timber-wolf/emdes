@@ -16,11 +16,18 @@
         <item name="GROUP_NODE:github" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </expand>
-    <select />
+    <select>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:main" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </select>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d7eac86c-ec80-4871-bd6e-dd6935b3bb16" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/views/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -35,7 +42,11 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1o0Qy6NFQ2CMxr8qPFt9Ne0Oddm" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -77,6 +88,33 @@
     <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="47" y="0" width="1822" height="959" key="MergeDialog" timestamp="1612489552707">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="47" y="0" width="1822" height="959" key="MergeDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1612489552707" />
+    <state x="594" y="277" key="MultipleFileMergeDialog" timestamp="1612489552723">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="594" y="277" key="MultipleFileMergeDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1612489552723" />
+    <state x="537" y="327" width="888" height="542" key="find.popup" timestamp="1612502231932">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="537" y="327" width="888" height="542" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1612502231932" />
+    <state x="727" y="229" key="git4idea.branch.GitSmartOperationDialog" timestamp="1612489355959">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="727" y="229" key="git4idea.branch.GitSmartOperationDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1612489355959" />
   </component>
 </project>
