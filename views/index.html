@@ -11,74 +11,90 @@
     <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
     <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link href="../css/main.css" rel="stylesheet">
-    <style>
-        a {
-            color: black;
-        }
-    </style>
+    <link href="../css/main.css" rel="stylesheet" type="text/css">
+    <!--页面滚动效果-->
+    <script src="http://www.lanrenzhijia.com/ajaxjs/1.10.1/jquery-1.10.1.min.js"></script>
+    <script src="../js/flowup.js"></script>
+
 </head>
 <body>
-<div class="container">
-    <div class="row clearfix col-md-12 col-lg-12 col-xs-12">
-        <div class="col-md-12 column">
-            <div class="col-lg-2 col-md-2 col-xs-12" style="margin-top: 20px;margin-bottom: 20px">
-                <img src="../img/logoTitle.png" alt="logo" width="100%" height="100%">
+<!--头部-->
+<div class="div1" style="width: 100%;overflow: auto">
+    <div class="container">
+        <div class="row clearfix">
+            <div class="column">
+                <nav>
+                    <div class="col-md-4 edge">
+                        <img src="../img/logoTitle.png" alt="logo">
+                    </div>
+                    <div class="col-md-8 edge">
+                        <ul class="nav nav-pills nav-my">
+                            <li class="active">
+                                <a href="#"><span>首页</span></a>
+                            </li>
+                            <li>
+                                <a href="#"><span>公司概况</span></a>
+                            </li>
+                            <li>
+                                <a href="#"><span>事业内容</span></a>
+                            </li>
+                            <li>
+                                <a href="#"><span>开发体制</span></a>
+                            </li>
+                            <li>
+                                <a href="#"><span>企业文化</span></a>
+                            </li>
+                            <li>
+                                <a href="#"><span>人才招聘</span></a>
+                            </li>
+                            <li>
+                                <a href="#"><span>联系我们</span></a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
             </div>
-            <ul class="nav nav-tabs nav-justified" style="margin-top: 20px;margin-bottom: 20px;">
-                <li class="active">
-                    <a href="#">首页</a>
-                </li>
-                <li>
-                    <a href="#">公司概况</a>
-                </li>
-                <li>
-                    <a href="#">事业内容</a>
-                </li>
-                <li>
-                    <a href="#">开发体制</a>
-                </li>
-                <li>
-                    <a href="#">企业文化</a>
-                </li>
-                <li>
-                    <a href="#">人才招聘</a>
-                </li>
-                <li>
-                    <a href="#">联系我们</a>
-                </li>
-            </ul>
-            <div id="myCarousel" class="carousel slide" style="margin-bottom: 20px">
-                <!-- 轮播（Carousel）指标 -->
-                <ol class="carousel-indicators">
-                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                    <li data-target="#myCarousel" data-slide-to="1"></li>
-                </ol>
-                <!-- 轮播（Carousel）项目 -->
-                <div class="carousel-inner" style="height: 600px">
-                    <div class="item active">
-                        <img src="../img/ShufflingFigureOne.jpg" alt="First slide" width="100%" height="auto">
-                        <div class="carousel-caption"></div>
+        </div>
+    </div>
+</div>
+<!--轮播部分-->
+<div class="div2" style="width: 100%;overflow: auto">
+    <div class="container-fluid">
+        <div class="row clearfix">
+            <div class="column">
+                <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="3000">
+                    <!-- 轮播（Carousel）指标 -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                    </ol>
+                    <!-- 轮播（Carousel）项目 -->
+                    <div class="carousel-inner" style="height: 600px">
+                        <div class="item active">
+                            <img src="../img/slide4.jpg" alt="First" width="100%" height="auto" style="vertical-align: middle">
+                            <div class="carousel-caption"></div>
+                        </div>
+                        <div class="item">
+                            <img src="../img/slide5.jpg" alt="Second" width="100%" height="auto">
+                            <div class="carousel-caption"></div>
+                        </div>
                     </div>
-                    <div class="item">
-                        <img src="../img/ShufflingFigureTwo.jpg" alt="Second slide" width="100%" height="auto">
-                        <div class="carousel-caption"></div>
-                    </div>
+                    <!-- 轮播（Carousel）导航 -->
+                    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
                 </div>
-                <!-- 轮播（Carousel）导航 -->
-                <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                </a>
             </div>
         </div>
     </div>
 </div>
 <!--主体内容部分-->
-<div class="container">
+<div class="container cons div1">
     <div class="row clearfix">
         <!--公司简介-->
         <div class="col-md-4 column main-1">
@@ -207,7 +223,7 @@
     </div>
 </div>
 <!--尾部-->
-<div class="w-1">
+<div class="w-1 div2">
     <div>
         <a href="#">联系我们 | </a>
         <a href="#">网站地图 | </a>
@@ -215,6 +231,41 @@
     </div>
     <hr class="w-1-1">
     <p>Copyright © Xi’an Ming De Software Co.,Ltd. 2008-2018 All Rights reserved   <a href="#">陕ICP备09000289号</a></p>
+    <!--一键置顶-->
+    <div class="t-top" style="float: right;position: fixed;right: 4%;">
+        <a onclick="p_top()">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up-square-fill" viewBox="0 0 16 16" style="width: 35px;height: 35px">
+                <path d="M2 16a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2zm6.5-4.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 1 0z"/>
+            </svg>
+        </a>
+    </div>
 </div>
+<script>
+    /*一键置顶*/
+    function p_top() {
+        $('body,html').animate({
+            scrollTop: 0
+        }, 800);
+        return false;
+    }
+    /*页面滚动效果*/
+    $(function(){
+        $("body").flowUp("div", { transalteY: 350, duration: 1 });
+    });
+    $(".t-top").hide();
+    $(function () {
+        $(window).scroll(function () {
+            if ($(window).scrollTop() > 100) {
+                $(".t-top").fadeIn(500);
+            }
+            else {
+                $(".t-top").fadeOut(500);
+            }
+        });
+        $('body,html').animate({
+            scrollTop: 0
+        }, 800);
+    });
+</script>
 </body>
 </html>
