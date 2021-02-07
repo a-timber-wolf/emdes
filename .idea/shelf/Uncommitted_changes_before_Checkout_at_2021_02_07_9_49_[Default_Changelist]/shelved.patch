@@ -1,0 +1,776 @@
+Index: css/main.css
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>.main-1-2 {\r\n    width: 1100px;\r\n    height: 370px;\r\n    margin-left: 15px;\r\n    border-top:3px solid #0087bd;\r\n}\r\n.main-1 {\r\n    width:1100px;\r\n    height: 300px;\r\n    margin-left: 15px;\r\n    border-top:3px solid #0087bd;\r\n}\r\n.main-in-one {\r\n    width:500px;\r\n    float:left;\r\n    display:inline;\r\n}\r\n.main-in-two {\r\n    float:right;\r\n    display:inline;\r\n}\r\n.n1 {\r\n    float: left;\r\n    float: none;\r\n}\r\n.n2 {\r\n    float: right;\r\n    display: block;\r\n}\r\nul {\r\n    list-style: none;\r\n    padding-left: 20px;\r\n}\r\n.lss {\r\n    border-bottom: 1px #999 dashed;\r\n}\r\n.a1 {\r\n    color: #ffb500;\r\n}\r\n.text-1 {\r\n    text-indent: 2em;\r\n}\r\n.text-2 {\r\n    font-size: 22px;\r\n    font-weight: bold;\r\n    font-family: STFangsong;\r\n}\r\n.di-1 {\r\n    display: inline-block;\r\n    margin-top: 10px;\r\n}\r\n.di-2 {\r\n    margin-right: 100px;\r\n    margin-left: 100px;\r\n}\r\n.di-3 {\r\n    margin-left: 50px;\r\n}\r\n.w-1 {\r\n    width: 100%;\r\n    height: 300px;\r\n    background: #ddd;\r\n    text-align: center;\r\n    padding-top: 30px;\r\n}\r\n.w-1-1 {\r\n    border-bottom: 2px #999 solid;\r\n    margin-top: 0px;\r\n    width: 1100px;\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- css/main.css	(revision 0ca5af0f101fd0350c39a0b364f2d11943a6ea86)
++++ css/main.css	(date 1612662238667)
+@@ -58,7 +58,7 @@
+ }
+ .w-1 {
+     width: 100%;
+-    height: 300px;
++    height: 200px;
+     background: #ddd;
+     text-align: center;
+     padding-top: 30px;
+@@ -68,3 +68,32 @@
+     margin-top: 0px;
+     width: 1100px;
+ }
++
++.edge {
++    padding: 0;
++    /* 上右下左 */
++    margin: 10px 0 10px 0;
++}
++span {
++    color: black;
++    font-size: 18px;
++}
++
++.nav-my {
++}
++
++.nav-pills > li.active > a,
++.nav-pills > li.active > a:hover,
++.nav-pills > li.active > a:focus {
++    /*color: #fff;*/
++    background-color: lightblue;
++}
++
++.nav > li > a:hover,
++.nav > li > a:focus {
++    text-decoration: none;
++    background-color: lightblue;
++}
++.cons {
++    margin-top: 30px;
++}
+\ No newline at end of file
+Index: views/index.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><!DOCTYPE html>\r\n<html lang=\"en\">\r\n<head>\r\n    <meta charset=\"UTF-8\">\r\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\r\n    <title>西安明徳軟件有限公司 -- www.emdes.com.cn</title>\r\n    <!-- 最新的 Bootstrap 核心 CSS 文件 -->\r\n    <link href=\"https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css\" rel=\"stylesheet\">\r\n    <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->\r\n    <script src=\"https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js\"></script>\r\n    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->\r\n    <script src=\"https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js\"></script>\r\n    <link href=\"../css/main.css\" rel=\"stylesheet\">\r\n</head>\r\n<body>\r\n<div class=\"container\">\r\n    <div class=\"row clearfix\">\r\n        <div class=\"col-md-12 column\">\r\n            <ul class=\"nav nav-tabs\">\r\n                <li class=\"active\">\r\n                    <a href=\"#\">首页</a>\r\n                </li>\r\n                <li>\r\n                    <a href=\"#\">简介</a>\r\n                </li>\r\n                <li class=\"disabled\">\r\n                    <a href=\"#\">信息</a>\r\n                </li>\r\n                <li class=\"dropdown pull-right\">\r\n                    <a href=\"#\" data-toggle=\"dropdown\" class=\"dropdown-toggle\">下拉<strong class=\"caret\"></strong></a>\r\n                    <ul class=\"dropdown-menu\">\r\n                        <li>\r\n                            <a href=\"#\">操作</a>\r\n                        </li>\r\n                        <li>\r\n                            <a href=\"#\">设置栏目</a>\r\n                        </li>\r\n                        <li>\r\n                            <a href=\"#\">更多设置</a>\r\n                        </li>\r\n                        <li class=\"divider\">\r\n                        </li>\r\n                        <li>\r\n                            <a href=\"#\">分割线</a>\r\n                        </li>\r\n                    </ul>\r\n                </li>\r\n            </ul>\r\n            <div class=\"jumbotron\">\r\n                <h1>\r\n                    Hello, world!\r\n                </h1>\r\n                <p>\r\n                    This is a template for a simple marketing or informational website. It includes a large callout called the hero unit and three supporting pieces of content. Use it as a starting point to create something more unique.\r\n                </p>\r\n                <p>\r\n                    <a class=\"btn btn-primary btn-large\" href=\"#\">Learn more</a>\r\n                </p>\r\n            </div>\r\n        </div>\r\n    </div>\r\n</div>\r\n<!--主体内容部分-->\r\n<div class=\"container\">\r\n    <div class=\"row clearfix\">\r\n        <!--公司简介-->\r\n        <div class=\"col-md-4 column main-1\">\r\n            <div class=\"main-in-one\">\r\n                <h3 class=\"text-2\">\r\n                    <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\" fill=\"currentColor\" class=\"bi bi-grid-fill\" viewBox=\"0 0 16 16\">\r\n                        <path d=\"M1 2.5A1.5 1.5 0 0 1 2.5 1h3A1.5 1.5 0 0 1 7 2.5v3A1.5 1.5 0 0 1 5.5 7h-3A1.5 1.5 0 0 1 1 5.5v-3zm8 0A1.5 1.5 0 0 1 10.5 1h3A1.5 1.5 0 0 1 15 2.5v3A1.5 1.5 0 0 1 13.5 7h-3A1.5 1.5 0 0 1 9 5.5v-3zm-8 8A1.5 1.5 0 0 1 2.5 9h3A1.5 1.5 0 0 1 7 10.5v3A1.5 1.5 0 0 1 5.5 15h-3A1.5 1.5 0 0 1 1 13.5v-3zm8 0A1.5 1.5 0 0 1 10.5 9h3a1.5 1.5 0 0 1 1.5 1.5v3a1.5 1.5 0 0 1-1.5 1.5h-3A1.5 1.5 0 0 1 9 13.5v-3z\" style=\"color: #0087bd\"/>\r\n                    </svg>&nbsp公司简介\r\n                </h3>\r\n                <p class=\"text-1\">\r\n                    西安明德软件有限公司是日本EMD公司投资的中国现地法人公司，成立于2008年12月。公司面向日本企业以及中国国内企业提供软件设计开发、技术支持服务、系统维护服务以及咨询服务的高科技公司。\r\n                </p>\r\n            </div>\r\n            <div class=\"main-in-two\">\r\n                <img alt=\"140x140\" src=\"../img/test.jpg\" width=\"250px\" height=\"250px\" style=\"margin-top: 10%\"/>\r\n            </div>\r\n        </div>\r\n        <!--新闻中心-->\r\n        <div class=\"col-md-4 column main-1\">\r\n            <div class=\"main-in-one\">\r\n                <h3 class=\"text-2\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\" fill=\"currentColor\" class=\"bi bi-grid-fill\" viewBox=\"0 0 16 16\">\r\n                        <path d=\"M1 2.5A1.5 1.5 0 0 1 2.5 1h3A1.5 1.5 0 0 1 7 2.5v3A1.5 1.5 0 0 1 5.5 7h-3A1.5 1.5 0 0 1 1 5.5v-3zm8 0A1.5 1.5 0 0 1 10.5 1h3A1.5 1.5 0 0 1 15 2.5v3A1.5 1.5 0 0 1 13.5 7h-3A1.5 1.5 0 0 1 9 5.5v-3zm-8 8A1.5 1.5 0 0 1 2.5 9h3A1.5 1.5 0 0 1 7 10.5v3A1.5 1.5 0 0 1 5.5 15h-3A1.5 1.5 0 0 1 1 13.5v-3zm8 0A1.5 1.5 0 0 1 10.5 9h3a1.5 1.5 0 0 1 1.5 1.5v3a1.5 1.5 0 0 1-1.5 1.5h-3A1.5 1.5 0 0 1 9 13.5v-3z\" style=\"color: #0087bd\"/>\r\n                    </svg>&nbsp新闻中心\r\n                </h3>\r\n                <ul>\r\n                    <!--动态的添加公司最新新闻-->\r\n                    <a id=\"\"></a>\r\n                    <li class=\"lss\">\r\n                        <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\" fill=\"currentColor\" class=\"bi bi-caret-right-fill\" viewBox=\"0 0 16 16\" style=\"vertical-align: sub\">\r\n                            <path d=\"M12.14 8.753l-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z\" class=\"a1\"/>\r\n                        </svg>\r\n                        <a class=\"n1\" href=\"#\">★西安明德软件有限公司的主页改版</a>\r\n                        <a class=\"n2\">2021-02-04</a>\r\n                    </li>\r\n                    <li class=\"lss\">\r\n                        <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\" fill=\"currentColor\" class=\"bi bi-caret-right-fill\" viewBox=\"0 0 16 16\" style=\"vertical-align: sub\">\r\n                            <path d=\"M12.14 8.753l-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z\" class=\"a1\"/>\r\n                        </svg>\r\n                        <a class=\"n1\" href=\"#\">★日本岐阜电视台采访株式会社EMD</a>\r\n                        <a class=\"n2\">2021-02-04</a>\r\n                    </li>\r\n                    <li class=\"lss\">\r\n                        <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\" fill=\"currentColor\" class=\"bi bi-caret-right-fill\" viewBox=\"0 0 16 16\" style=\"vertical-align: sub\">\r\n                            <path d=\"M12.14 8.753l-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z\" class=\"a1\"/>\r\n                        </svg>\r\n                        <a class=\"n1\" href=\"#\">★西安明德软件有限公司成立</a>\r\n                        <a class=\"n2\">2021-02-04</a>\r\n                    </li>\r\n                </ul>\r\n            </div>\r\n            <div class=\"main-in-two\">\r\n                <img alt=\"140x140\" src=\"../img/test.jpg\" width=\"250px\" height=\"250px\" style=\"margin-top: 10%\"/>\r\n            </div>\r\n        </div>\r\n        <!--解决方案-->\r\n        <div class=\"col-md-4 column main-1\">\r\n            <div class=\"main-in-one\">\r\n                <h3 class=\"text-2\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\" fill=\"currentColor\" class=\"bi bi-grid-fill\" viewBox=\"0 0 16 16\">\r\n                        <path d=\"M1 2.5A1.5 1.5 0 0 1 2.5 1h3A1.5 1.5 0 0 1 7 2.5v3A1.5 1.5 0 0 1 5.5 7h-3A1.5 1.5 0 0 1 1 5.5v-3zm8 0A1.5 1.5 0 0 1 10.5 1h3A1.5 1.5 0 0 1 15 2.5v3A1.5 1.5 0 0 1 13.5 7h-3A1.5 1.5 0 0 1 9 5.5v-3zm-8 8A1.5 1.5 0 0 1 2.5 9h3A1.5 1.5 0 0 1 7 10.5v3A1.5 1.5 0 0 1 5.5 15h-3A1.5 1.5 0 0 1 1 13.5v-3zm8 0A1.5 1.5 0 0 1 10.5 9h3a1.5 1.5 0 0 1 1.5 1.5v3a1.5 1.5 0 0 1-1.5 1.5h-3A1.5 1.5 0 0 1 9 13.5v-3z\" style=\"color: #0087bd\"/>\r\n                    </svg>&nbsp解决方案\r\n                </h3>\r\n                <ul>\r\n                    <li class=\"lss\">\r\n                        <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\" fill=\"currentColor\" class=\"bi bi-caret-right-fill\" viewBox=\"0 0 16 16\" style=\"vertical-align: sub\">\r\n                            <path d=\"M12.14 8.753l-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z\" class=\"a1\"/>\r\n                        </svg>\r\n                        <a href=\"#\">集团OA办公解决方案</a>\r\n                    </li>\r\n                    <li class=\"lss\">\r\n                        <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\" fill=\"currentColor\" class=\"bi bi-caret-right-fill\" viewBox=\"0 0 16 16\" style=\"vertical-align: sub\">\r\n                            <path d=\"M12.14 8.753l-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z\" class=\"a1\"/>\r\n                        </svg>\r\n                        <a href=\"#\">人力资源解决方案</a>\r\n                    </li>\r\n                    <li class=\"lss\">\r\n                        <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\" fill=\"currentColor\" class=\"bi bi-caret-right-fill\" viewBox=\"0 0 16 16\" style=\"vertical-align: sub\">\r\n                            <path d=\"M12.14 8.753l-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z\" class=\"a1\"/>\r\n                        </svg>\r\n                        <a href=\"#\">物流仓储解决方案</a>\r\n                    </li>\r\n                    <li class=\"lss\">\r\n                        <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\" fill=\"currentColor\" class=\"bi bi-caret-right-fill\" viewBox=\"0 0 16 16\" style=\"vertical-align: sub\">\r\n                            <path d=\"M12.14 8.753l-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z\" class=\"a1\"/>\r\n                        </svg>\r\n                        <a href=\"#\">远程连接解决方案</a>\r\n                    </li>\r\n                </ul>\r\n            </div>\r\n            <div class=\"main-in-two\">\r\n                <img alt=\"140x140\" src=\"../img/test.jpg\" width=\"250px\" height=\"250px\" style=\"margin-top: 10%\"/>\r\n            </div>\r\n        </div>\r\n        <!--资格认证-->\r\n        <div class=\"col-md-4 column main-1-2\">\r\n            <div>\r\n                <h3 class=\"text-2\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\" fill=\"currentColor\" class=\"bi bi-grid-fill\" viewBox=\"0 0 16 16\">\r\n                    <path d=\"M1 2.5A1.5 1.5 0 0 1 2.5 1h3A1.5 1.5 0 0 1 7 2.5v3A1.5 1.5 0 0 1 5.5 7h-3A1.5 1.5 0 0 1 1 5.5v-3zm8 0A1.5 1.5 0 0 1 10.5 1h3A1.5 1.5 0 0 1 15 2.5v3A1.5 1.5 0 0 1 13.5 7h-3A1.5 1.5 0 0 1 9 5.5v-3zm-8 8A1.5 1.5 0 0 1 2.5 9h3A1.5 1.5 0 0 1 7 10.5v3A1.5 1.5 0 0 1 5.5 15h-3A1.5 1.5 0 0 1 1 13.5v-3zm8 0A1.5 1.5 0 0 1 10.5 9h3a1.5 1.5 0 0 1 1.5 1.5v3a1.5 1.5 0 0 1-1.5 1.5h-3A1.5 1.5 0 0 1 9 13.5v-3z\" style=\"color: #0087bd\"/>\r\n                </svg>&nbsp资格认证\r\n                </h3>\r\n            </div>\r\n            <div class=\"di-1 di-3\">\r\n                <div>\r\n                    <img alt=\"140x140\" src=\"../img/test.jpg\" width=\"250px\" height=\"250px\"/>\r\n                </div>\r\n                <div>\r\n                    <p>软件企业认证</p>\r\n                </div>\r\n            </div>\r\n            <div class=\"di-1 di-2\">\r\n                <div>\r\n                    <img alt=\"140x140\" src=\"../img/test.jpg\" width=\"250px\" height=\"250px\"/>\r\n                </div>\r\n                <div>\r\n                    <p>技术先进性服务企业认证</p>\r\n                </div>\r\n            </div>\r\n            <div class=\"di-1\">\r\n                <div>\r\n                    <img alt=\"140x140\" src=\"../img/test.jpg\" width=\"250px\" height=\"250px\"/>\r\n                </div>\r\n                <div>\r\n                    <p>技术先进性服务企业认证</p>\r\n                </div>\r\n            </div>\r\n        </div>\r\n    </div>\r\n</div>\r\n<!--尾部-->\r\n<div class=\"w-1\">\r\n    <div>\r\n        <a href=\"#\">联系我们 | </a>\r\n        <a href=\"#\">网站地图 | </a>\r\n        <a href=\"#\">个人信息保护 </a>\r\n    </div>\r\n    <hr class=\"w-1-1\">\r\n    <p>Copyright © Xi’an Ming De Software Co.,Ltd. 2008-2018 All Rights reserved   <a href=\"#\">陕ICP备09000289号</a></p>\r\n</div>\r\n</body>\r\n</html>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- views/index.html	(revision 0ca5af0f101fd0350c39a0b364f2d11943a6ea86)
++++ views/index.html	(date 1612662470003)
+@@ -11,6 +11,10 @@
+     <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+     <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+     <link href="../css/main.css" rel="stylesheet">
++    <link href="../css/main.css" rel="stylesheet" type="text/css">
++    <!--页面滚动效果-->
++    <script src="http://www.lanrenzhijia.com/ajaxjs/1.10.1/jquery-1.10.1.min.js"></script>
++    <script src="../js/flowup.js"></script>
+ </head>
+ <body>
+ <div class="container">
+@@ -56,12 +60,83 @@
+                 <p>
+                     <a class="btn btn-primary btn-large" href="#">Learn more</a>
+                 </p>
++<!--头部-->
++<div class="div1" style="width: 100%;overflow: auto">
++    <div class="container">
++        <div class="row clearfix">
++            <div class="column">
++                <nav>
++                    <div class="col-md-4 edge">
++                        <img src="../img/logoTitle.png" alt="logo">
++                    </div>
++                    <div class="col-md-8 edge">
++                        <ul class="nav nav-pills nav-my">
++                            <li class="active">
++                                <a href="#"><span>首页</span></a>
++                            </li>
++                            <li>
++                                <a href="#"><span>公司概况</span></a>
++                            </li>
++                            <li>
++                                <a href="#"><span>事业内容</span></a>
++                            </li>
++                            <li>
++                                <a href="#"><span>开发体制</span></a>
++                            </li>
++                            <li>
++                                <a href="#"><span>企业文化</span></a>
++                            </li>
++                            <li>
++                                <a href="#"><span>人才招聘</span></a>
++                            </li>
++                            <li>
++                                <a href="#"><span>联系我们</span></a>
++                            </li>
++                        </ul>
++                    </div>
++                </nav>
++            </div>
++        </div>
++    </div>
++</div>
++<!--轮播部分-->
++<div class="div2" style="width: 100%;overflow: auto">
++    <div class="container-fluid">
++        <div class="row clearfix">
++            <div class="column">
++                <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="3000">
++                    <!-- 轮播（Carousel）指标 -->
++                    <ol class="carousel-indicators">
++                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
++                        <li data-target="#myCarousel" data-slide-to="1"></li>
++                    </ol>
++                    <!-- 轮播（Carousel）项目 -->
++                    <div class="carousel-inner" style="height: 600px">
++                        <div class="item active">
++                            <img src="../img/slide4.jpg" alt="First" width="100%" height="auto" style="vertical-align: middle">
++                            <div class="carousel-caption"></div>
++                        </div>
++                        <div class="item">
++                            <img src="../img/slide5.jpg" alt="Second" width="100%" height="auto">
++                            <div class="carousel-caption"></div>
++                        </div>
++                    </div>
++                    <!-- 轮播（Carousel）导航 -->
++                    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
++                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
++                        <span class="sr-only">Previous</span>
++                    </a>
++                    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
++                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
++                        <span class="sr-only">Next</span>
++                    </a>
++                </div>
+             </div>
+         </div>
+     </div>
+ </div>
+ <!--主体内容部分-->
+-<div class="container">
++<div class="container cons div1">
+     <div class="row clearfix">
+         <!--公司简介-->
+         <div class="col-md-4 column main-1">
+@@ -198,6 +273,41 @@
+     </div>
+     <hr class="w-1-1">
+     <p>Copyright © Xi’an Ming De Software Co.,Ltd. 2008-2018 All Rights reserved   <a href="#">陕ICP备09000289号</a></p>
++    <!--一键置顶-->
++    <div class="t-top" style="float: right;position: fixed;right: 4%;">
++        <a onclick="p_top()">
++            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up-square-fill" viewBox="0 0 16 16" style="width: 35px;height: 35px">
++                <path d="M2 16a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2zm6.5-4.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 1 0z"/>
++            </svg>
++        </a>
++    </div>
+ </div>
++<script>
++    /*一键置顶*/
++    function p_top() {
++        $('body,html').animate({
++            scrollTop: 0
++        }, 800);
++        return false;
++    }
++    /*页面滚动效果*/
++    $(function(){
++        $("body").flowUp("div", { transalteY: 350, duration: 1 });
++    });
++    $(".t-top").hide();
++    $(function () {
++        $(window).scroll(function () {
++            if ($(window).scrollTop() > 100) {
++                $(".t-top").fadeIn(500);
++            }
++            else {
++                $(".t-top").fadeOut(500);
++            }
++        });
++        $('body,html').animate({
++            scrollTop: 0
++        }, 800);
++    });
++</script>
+ </body>
+ </html>
+\ No newline at end of file
+Index: .idea/shelf/Uncommitted_changes_before_Merge_at_2021_02_05_9_36_[Default_Changelist]/shelved.patch
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/shelf/Uncommitted_changes_before_Merge_at_2021_02_05_9_36_[Default_Changelist]/shelved.patch	(date 1612662238635)
++++ .idea/shelf/Uncommitted_changes_before_Merge_at_2021_02_05_9_36_[Default_Changelist]/shelved.patch	(date 1612662238635)
+@@ -0,0 +1,29 @@
++Index: .idea/workspace.xml
++IDEA additional info:
++Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
++<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"BranchesTreeState\">\r\n    <expand>\r\n      <path>\r\n        <item name=\"ROOT\" type=\"e8cecc67:BranchNodeDescriptor\" />\r\n        <item name=\"LOCAL_ROOT\" type=\"e8cecc67:BranchNodeDescriptor\" />\r\n      </path>\r\n      <path>\r\n        <item name=\"ROOT\" type=\"e8cecc67:BranchNodeDescriptor\" />\r\n        <item name=\"REMOTE_ROOT\" type=\"e8cecc67:BranchNodeDescriptor\" />\r\n      </path>\r\n      <path>\r\n        <item name=\"ROOT\" type=\"e8cecc67:BranchNodeDescriptor\" />\r\n        <item name=\"REMOTE_ROOT\" type=\"e8cecc67:BranchNodeDescriptor\" />\r\n        <item name=\"GROUP_NODE:github\" type=\"e8cecc67:BranchNodeDescriptor\" />\r\n      </path>\r\n    </expand>\r\n    <select />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"d7eac86c-ec80-4871-bd6e-dd6935b3bb16\" name=\"Default Changelist\" comment=\"\" />\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"HTML File\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_BRANCH_BY_REPOSITORY\">\r\n      <map>\r\n        <entry key=\"$PROJECT_DIR$\" value=\"master\" />\r\n      </map>\r\n    </option>\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"ProjectId\" id=\"1o0Qy6NFQ2CMxr8qPFt9Ne0Oddm\" />\r\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\" />\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\">\r\n    <property name=\"ASKED_SHARE_PROJECT_CONFIGURATION_FILES\" value=\"true\" />\r\n    <property name=\"DefaultHtmlFileTemplate\" value=\"HTML File\" />\r\n    <property name=\"RunOnceActivity.OpenProjectViewOnStart\" value=\"true\" />\r\n    <property name=\"SHARE_PROJECT_CONFIGURATION_FILES\" value=\"true\" />\r\n    <property name=\"WebServerToolWindowFactoryState\" value=\"false\" />\r\n    <property name=\"vue.rearranger.settings.migration\" value=\"true\" />\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"d7eac86c-ec80-4871-bd6e-dd6935b3bb16\" name=\"Default Changelist\" comment=\"\" />\r\n      <created>1612421295631</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1612421295631</updated>\r\n      <workItem from=\"1612421302293\" duration=\"1828000\" />\r\n    </task>\r\n    <servers />\r\n  </component>\r\n  <component name=\"TypeScriptGeneratedFilesManager\">\r\n    <option name=\"version\" value=\"3\" />\r\n  </component>\r\n  <component name=\"Vcs.Log.Tabs.Properties\">\r\n    <option name=\"oldMeFiltersMigrated\" value=\"true\" />\r\n  </component>\r\n</project>
++Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
++<+>UTF-8
++===================================================================
++--- .idea/workspace.xml	(revision c7342e7deda58b11b5b0fe79cf7b5d89417274d8)
+++++ .idea/workspace.xml	(date 1612488808011)
++@@ -52,6 +52,7 @@
++     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
++     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
++     <property name="WebServerToolWindowFactoryState" value="false" />
+++    <property name="settings.editor.selected.configurable" value="vcs.Git" />
++     <property name="vue.rearranger.settings.migration" value="true" />
++   </component>
++   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
++@@ -72,4 +73,10 @@
++   <component name="Vcs.Log.Tabs.Properties">
++     <option name="oldMeFiltersMigrated" value="true" />
++   </component>
+++  <component name="WindowStateProjectService">
+++    <state x="453" y="151" key="SettingsEditor" timestamp="1612488573808">
+++      <screen x="0" y="0" width="1920" height="1040" />
+++    </state>
+++    <state x="453" y="151" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1612488573808" />
+++  </component>
++ </project>
++\ No newline at end of file
+Index: .idea/shelf/Uncommitted_changes_before_Update_at_2021_02_05_9_18_[Default_Changelist]/shelved.patch
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/shelf/Uncommitted_changes_before_Update_at_2021_02_05_9_18_[Default_Changelist]/shelved.patch	(date 1612662238662)
++++ .idea/shelf/Uncommitted_changes_before_Update_at_2021_02_05_9_18_[Default_Changelist]/shelved.patch	(date 1612662238662)
+@@ -0,0 +1,65 @@
++Index: .idea/vcs.xml
++IDEA additional info:
++Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
++<+>UTF-8
++===================================================================
++--- .idea/vcs.xml	(date 1612487533216)
+++++ .idea/vcs.xml	(date 1612487533216)
++@@ -0,0 +1,6 @@
+++<?xml version="1.0" encoding="UTF-8"?>
+++<project version="4">
+++  <component name="VcsDirectoryMappings">
+++    <mapping directory="$PROJECT_DIR$" vcs="Git" />
+++  </component>
+++</project>
++\ No newline at end of file
++Index: .idea/workspace.xml
++IDEA additional info:
++Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
++<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"d7eac86c-ec80-4871-bd6e-dd6935b3bb16\" name=\"Default Changelist\" comment=\"\" />\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"HTML File\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"ProjectId\" id=\"1o0Qy6NFQ2CMxr8qPFt9Ne0Oddm\" />\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\">\r\n    <property name=\"DefaultHtmlFileTemplate\" value=\"HTML File\" />\r\n    <property name=\"RunOnceActivity.OpenProjectViewOnStart\" value=\"true\" />\r\n    <property name=\"WebServerToolWindowFactoryState\" value=\"false\" />\r\n    <property name=\"vue.rearranger.settings.migration\" value=\"true\" />\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"d7eac86c-ec80-4871-bd6e-dd6935b3bb16\" name=\"Default Changelist\" comment=\"\" />\r\n      <created>1612421295631</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1612421295631</updated>\r\n      <workItem from=\"1612421302293\" duration=\"1828000\" />\r\n    </task>\r\n    <servers />\r\n  </component>\r\n  <component name=\"TypeScriptGeneratedFilesManager\">\r\n    <option name=\"version\" value=\"3\" />\r\n  </component>\r\n</project>
++Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
++<+>UTF-8
++===================================================================
++--- .idea/workspace.xml	(revision 3ea12cb1fc454ea4266a7569141be97346b6df73)
+++++ .idea/workspace.xml	(date 1612487802221)
++@@ -14,7 +14,16 @@
++       </list>
++     </option>
++   </component>
+++  <component name="Git.Settings">
+++    <option name="RECENT_BRANCH_BY_REPOSITORY">
+++      <map>
+++        <entry key="$PROJECT_DIR$" value="master" />
+++      </map>
+++    </option>
+++    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+++  </component>
++   <component name="ProjectId" id="1o0Qy6NFQ2CMxr8qPFt9Ne0Oddm" />
+++  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
++   <component name="ProjectViewState">
++     <option name="hideEmptyMiddlePackages" value="true" />
++     <option name="showLibraryContents" value="true" />
++@@ -34,10 +43,22 @@
++       <option name="presentableId" value="Default" />
++       <updated>1612421295631</updated>
++       <workItem from="1612421302293" duration="1828000" />
+++      <workItem from="1612487516248" duration="258000" />
++     </task>
++     <servers />
++   </component>
++   <component name="TypeScriptGeneratedFilesManager">
++     <option name="version" value="3" />
++   </component>
+++  <component name="Vcs.Log.Tabs.Properties">
+++    <option name="TAB_STATES">
+++      <map>
+++        <entry key="MAIN">
+++          <value>
+++            <State />
+++          </value>
+++        </entry>
+++      </map>
+++    </option>
+++  </component>
++ </project>
++\ No newline at end of file
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"d7eac86c-ec80-4871-bd6e-dd6935b3bb16\" name=\"Default Changelist\" comment=\"\">\r\n      <change afterPath=\"$PROJECT_DIR$/img/ShufflingFigureOne.jpg\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/img/ShufflingFigureTwo.jpg\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/img/logoTitle.png\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/css/main.css\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/css/main.css\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/views/index.html\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/views/index.html\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"HTML File\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"ProjectId\" id=\"1o0Qy6NFQ2CMxr8qPFt9Ne0Oddm\" />\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\">\r\n    <property name=\"DefaultHtmlFileTemplate\" value=\"HTML File\" />\r\n    <property name=\"RunOnceActivity.OpenProjectViewOnStart\" value=\"true\" />\r\n    <property name=\"WebServerToolWindowFactoryState\" value=\"false\" />\r\n    <property name=\"aspect.path.notification.shown\" value=\"true\" />\r\n    <property name=\"last_opened_file_path\" value=\"$PROJECT_DIR$\" />\r\n    <property name=\"vue.rearranger.settings.migration\" value=\"true\" />\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"d7eac86c-ec80-4871-bd6e-dd6935b3bb16\" name=\"Default Changelist\" comment=\"\" />\r\n      <created>1612421295631</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1612421295631</updated>\r\n      <workItem from=\"1612421302293\" duration=\"2472000\" />\r\n      <workItem from=\"1612428085318\" duration=\"5066000\" />\r\n      <workItem from=\"1612486943207\" duration=\"102000\" />\r\n      <workItem from=\"1612488652718\" duration=\"13930000\" />\r\n    </task>\r\n    <servers />\r\n  </component>\r\n  <component name=\"TypeScriptGeneratedFilesManager\">\r\n    <option name=\"version\" value=\"3\" />\r\n  </component>\r\n  <component name=\"WindowStateProjectService\">\r\n    <state x=\"768\" y=\"175\" width=\"672\" height=\"684\" key=\"search.everywhere.popup\" timestamp=\"1612495607117\">\r\n      <screen x=\"0\" y=\"0\" width=\"1440\" height=\"860\" />\r\n    </state>\r\n    <state x=\"768\" y=\"175\" width=\"672\" height=\"684\" key=\"search.everywhere.popup/0.0.1440.860@0.0.1440.860\" timestamp=\"1612495607117\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/workspace.xml	(revision 0ca5af0f101fd0350c39a0b364f2d11943a6ea86)
++++ .idea/workspace.xml	(date 1612662238665)
+@@ -1,5 +1,29 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <project version="4">
++  <component name="BranchesTreeState">
++    <expand>
++      <path>
++        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
++        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
++      </path>
++      <path>
++        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
++        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
++      </path>
++      <path>
++        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
++        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
++        <item name="GROUP_NODE:github" type="e8cecc67:BranchNodeDescriptor" />
++      </path>
++    </expand>
++    <select>
++      <path>
++        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
++        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
++        <item name="BRANCH:main" type="e8cecc67:BranchNodeDescriptor" />
++      </path>
++    </select>
++  </component>
+   <component name="ChangeListManager">
+     <list default="true" id="d7eac86c-ec80-4871-bd6e-dd6935b3bb16" name="Default Changelist" comment="">
+       <change afterPath="$PROJECT_DIR$/img/ShufflingFigureOne.jpg" afterDir="false" />
+@@ -25,6 +49,7 @@
+     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+   </component>
+   <component name="ProjectId" id="1o0Qy6NFQ2CMxr8qPFt9Ne0Oddm" />
++  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+   <component name="ProjectViewState">
+     <option name="hideEmptyMiddlePackages" value="true" />
+     <option name="showLibraryContents" value="true" />
+@@ -45,20 +70,56 @@
+       <option name="number" value="Default" />
+       <option name="presentableId" value="Default" />
+       <updated>1612421295631</updated>
++<<<<<<< HEAD
+       <workItem from="1612421302293" duration="2472000" />
+       <workItem from="1612428085318" duration="5066000" />
+       <workItem from="1612486943207" duration="102000" />
+       <workItem from="1612488652718" duration="13930000" />
++=======
++      <workItem from="1612421302293" duration="1828000" />
++>>>>>>> d4f528722de7e8910dd6cbddf555a5871c5bbde3
+     </task>
+     <servers />
+   </component>
+   <component name="TypeScriptGeneratedFilesManager">
+     <option name="version" value="3" />
+   </component>
++<<<<<<< HEAD
+   <component name="WindowStateProjectService">
+     <state x="768" y="175" width="672" height="684" key="search.everywhere.popup" timestamp="1612495607117">
+       <screen x="0" y="0" width="1440" height="860" />
+     </state>
+     <state x="768" y="175" width="672" height="684" key="search.everywhere.popup/0.0.1440.860@0.0.1440.860" timestamp="1612495607117" />
++=======
++  <component name="Vcs.Log.Tabs.Properties">
++    <option name="TAB_STATES">
++      <map>
++        <entry key="MAIN">
++          <value>
++            <State />
++          </value>
++        </entry>
++      </map>
++    </option>
++    <option name="oldMeFiltersMigrated" value="true" />
++  </component>
++  <component name="WindowStateProjectService">
++    <state x="47" y="0" width="1822" height="959" key="MergeDialog" timestamp="1612489552707">
++      <screen x="0" y="0" width="1920" height="1040" />
++    </state>
++    <state x="47" y="0" width="1822" height="959" key="MergeDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1612489552707" />
++    <state x="594" y="277" key="MultipleFileMergeDialog" timestamp="1612489552723">
++      <screen x="0" y="0" width="1920" height="1040" />
++    </state>
++    <state x="594" y="277" key="MultipleFileMergeDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1612489552723" />
++    <state x="537" y="327" width="888" height="542" key="find.popup" timestamp="1612502231932">
++      <screen x="0" y="0" width="1920" height="1040" />
++    </state>
++    <state x="537" y="327" width="888" height="542" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1612502231932" />
++    <state x="727" y="229" key="git4idea.branch.GitSmartOperationDialog" timestamp="1612489355959">
++      <screen x="0" y="0" width="1920" height="1040" />
++    </state>
++    <state x="727" y="229" key="git4idea.branch.GitSmartOperationDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1612489355959" />
++>>>>>>> d4f528722de7e8910dd6cbddf555a5871c5bbde3
+   </component>
+ </project>
+\ No newline at end of file
+Index: .idea/shelf/Uncommitted_changes_before_Checkout_at_2021_02_05_9_20_[Default_Changelist]/shelved.patch
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/shelf/Uncommitted_changes_before_Checkout_at_2021_02_05_9_20_[Default_Changelist]/shelved.patch	(date 1612662238629)
++++ .idea/shelf/Uncommitted_changes_before_Checkout_at_2021_02_05_9_20_[Default_Changelist]/shelved.patch	(date 1612662238629)
+@@ -0,0 +1,102 @@
++Index: .idea/vcs.xml
++IDEA additional info:
++Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
++<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"VcsDirectoryMappings\">\r\n    <mapping directory=\"\" vcs=\"Git\" />\r\n  </component>\r\n</project>
++Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
++<+>UTF-8
++===================================================================
++--- .idea/vcs.xml	(revision b05c62d15b782a99d106317ee14c3537980e5002)
+++++ .idea/vcs.xml	(date 1612487923201)
++@@ -1,6 +1,6 @@
++ <?xml version="1.0" encoding="UTF-8"?>
++ <project version="4">
++   <component name="VcsDirectoryMappings">
++-    <mapping directory="" vcs="Git" />
+++    <mapping directory="$PROJECT_DIR$" vcs="Git" />
++   </component>
++ </project>
++\ No newline at end of file
++Index: .idea/workspace.xml
++IDEA additional info:
++Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
++<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"d7eac86c-ec80-4871-bd6e-dd6935b3bb16\" name=\"Default Changelist\" comment=\"\">\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/views/index.html\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/views/index.html\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"HTML File\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"ProjectId\" id=\"1o0Qy6NFQ2CMxr8qPFt9Ne0Oddm\" />\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\">\r\n    <property name=\"DefaultHtmlFileTemplate\" value=\"HTML File\" />\r\n    <property name=\"RunOnceActivity.OpenProjectViewOnStart\" value=\"true\" />\r\n    <property name=\"WebServerToolWindowFactoryState\" value=\"false\" />\r\n    <property name=\"aspect.path.notification.shown\" value=\"true\" />\r\n    <property name=\"last_opened_file_path\" value=\"$PROJECT_DIR$\" />\r\n    <property name=\"vue.rearranger.settings.migration\" value=\"true\" />\r\n  </component>\r\n  <component name=\"RunManager\">\r\n    <configuration default=\"true\" type=\"ArquillianJUnit\" factoryName=\"\" nameIsGenerated=\"true\">\r\n      <option name=\"arquillianRunConfiguration\">\r\n        <value>\r\n          <option name=\"containerStateName\" value=\"\" />\r\n        </value>\r\n      </option>\r\n      <option name=\"TEST_OBJECT\" value=\"class\" />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"d7eac86c-ec80-4871-bd6e-dd6935b3bb16\" name=\"Default Changelist\" comment=\"\" />\r\n      <created>1612421295631</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1612421295631</updated>\r\n      <workItem from=\"1612421302293\" duration=\"2472000\" />\r\n      <workItem from=\"1612428085318\" duration=\"5066000\" />\r\n    </task>\r\n    <servers />\r\n  </component>\r\n  <component name=\"TypeScriptGeneratedFilesManager\">\r\n    <option name=\"version\" value=\"3\" />\r\n  </component>\r\n</project>
++Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
++<+>UTF-8
++===================================================================
++--- .idea/workspace.xml	(revision b05c62d15b782a99d106317ee14c3537980e5002)
+++++ .idea/workspace.xml	(date 1612488012550)
++@@ -1,10 +1,7 @@
++ <?xml version="1.0" encoding="UTF-8"?>
++ <project version="4">
++   <component name="ChangeListManager">
++-    <list default="true" id="d7eac86c-ec80-4871-bd6e-dd6935b3bb16" name="Default Changelist" comment="">
++-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
++-      <change beforePath="$PROJECT_DIR$/views/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/views/index.html" afterDir="false" />
++-    </list>
+++    <list default="true" id="d7eac86c-ec80-4871-bd6e-dd6935b3bb16" name="Default Changelist" comment="" />
++     <option name="SHOW_DIALOG" value="false" />
++     <option name="HIGHLIGHT_CONFLICTS" value="true" />
++     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
++@@ -17,9 +14,6 @@
++       </list>
++     </option>
++   </component>
++-  <component name="Git.Settings">
++-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
++-  </component>
++   <component name="ProjectId" id="1o0Qy6NFQ2CMxr8qPFt9Ne0Oddm" />
++   <component name="ProjectViewState">
++     <option name="hideEmptyMiddlePackages" value="true" />
++@@ -29,23 +23,8 @@
++     <property name="DefaultHtmlFileTemplate" value="HTML File" />
++     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
++     <property name="WebServerToolWindowFactoryState" value="false" />
++-    <property name="aspect.path.notification.shown" value="true" />
++-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
++     <property name="vue.rearranger.settings.migration" value="true" />
++   </component>
++-  <component name="RunManager">
++-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
++-      <option name="arquillianRunConfiguration">
++-        <value>
++-          <option name="containerStateName" value="" />
++-        </value>
++-      </option>
++-      <option name="TEST_OBJECT" value="class" />
++-      <method v="2">
++-        <option name="Make" enabled="true" />
++-      </method>
++-    </configuration>
++-  </component>
++   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
++   <component name="TaskManager">
++     <task active="true" id="Default" summary="Default task">
++@@ -54,12 +33,25 @@
++       <option name="number" value="Default" />
++       <option name="presentableId" value="Default" />
++       <updated>1612421295631</updated>
++-      <workItem from="1612421302293" duration="2472000" />
++-      <workItem from="1612428085318" duration="5066000" />
+++      <workItem from="1612421302293" duration="1828000" />
++     </task>
++     <servers />
++   </component>
++   <component name="TypeScriptGeneratedFilesManager">
++     <option name="version" value="3" />
++   </component>
+++  <component name="WindowStateProjectService">
+++    <state x="112" y="73" key="MergeDialog" timestamp="1612487979673">
+++      <screen x="0" y="0" width="1920" height="1040" />
+++    </state>
+++    <state x="112" y="73" key="MergeDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1612487979673" />
+++    <state x="522" y="265" key="MultipleFileMergeDialog" timestamp="1612487907634">
+++      <screen x="0" y="0" width="1920" height="1040" />
+++    </state>
+++    <state x="522" y="265" key="MultipleFileMergeDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1612487907634" />
+++    <state x="770" y="418" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1612487857641">
+++      <screen x="0" y="0" width="1920" height="1040" />
+++    </state>
+++    <state x="770" y="418" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1612487857641" />
+++  </component>
++ </project>
++\ No newline at end of file
+Index: .idea/shelf/Uncommitted_changes_before_Merge_at_2021_02_05_9_42_[Default_Changelist]/shelved.patch
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/shelf/Uncommitted_changes_before_Merge_at_2021_02_05_9_42_[Default_Changelist]/shelved.patch	(date 1612662238638)
++++ .idea/shelf/Uncommitted_changes_before_Merge_at_2021_02_05_9_42_[Default_Changelist]/shelved.patch	(date 1612662238638)
+@@ -0,0 +1,15 @@
++Index: .idea/vcs.xml
++IDEA additional info:
++Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
++<+>UTF-8
++===================================================================
++--- .idea/vcs.xml	(date 1612489122454)
+++++ .idea/vcs.xml	(date 1612489122454)
++@@ -0,0 +1,6 @@
+++<?xml version="1.0" encoding="UTF-8"?>
+++<project version="4">
+++  <component name="VcsDirectoryMappings">
+++    <mapping directory="" vcs="Git" />
+++  </component>
+++</project>
++\ No newline at end of file
+Index: .idea/shelf/Uncommitted_changes_before_Merge_at_2021_02_05_9_36__Default_Changelist_.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/shelf/Uncommitted_changes_before_Merge_at_2021_02_05_9_36__Default_Changelist_.xml	(date 1612662326012)
++++ .idea/shelf/Uncommitted_changes_before_Merge_at_2021_02_05_9_36__Default_Changelist_.xml	(date 1612662326012)
+@@ -0,0 +1,4 @@
++<changelist name="Uncommitted_changes_before_Merge_at_2021_02_05_9_36_[Default_Changelist]" date="1612488973499" recycled="true" deleted="true">
++  <option name="PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_2021_02_05_9_36_[Default_Changelist]/shelved.patch" />
++  <option name="DESCRIPTION" value="Uncommitted changes before Merge at 2021/02/05 9:36 [Default Changelist]" />
++</changelist>
+\ No newline at end of file
+Index: .idea/shelf/Uncommitted_changes_before_Merge_at_2021_02_05_9_33_[Default_Changelist]/shelved.patch
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/shelf/Uncommitted_changes_before_Merge_at_2021_02_05_9_33_[Default_Changelist]/shelved.patch	(date 1612662238633)
++++ .idea/shelf/Uncommitted_changes_before_Merge_at_2021_02_05_9_33_[Default_Changelist]/shelved.patch	(date 1612662238633)
+@@ -0,0 +1,29 @@
++Index: .idea/workspace.xml
++IDEA additional info:
++Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
++<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"BranchesTreeState\">\r\n    <expand>\r\n      <path>\r\n        <item name=\"ROOT\" type=\"e8cecc67:BranchNodeDescriptor\" />\r\n        <item name=\"LOCAL_ROOT\" type=\"e8cecc67:BranchNodeDescriptor\" />\r\n      </path>\r\n      <path>\r\n        <item name=\"ROOT\" type=\"e8cecc67:BranchNodeDescriptor\" />\r\n        <item name=\"REMOTE_ROOT\" type=\"e8cecc67:BranchNodeDescriptor\" />\r\n      </path>\r\n      <path>\r\n        <item name=\"ROOT\" type=\"e8cecc67:BranchNodeDescriptor\" />\r\n        <item name=\"REMOTE_ROOT\" type=\"e8cecc67:BranchNodeDescriptor\" />\r\n        <item name=\"GROUP_NODE:github\" type=\"e8cecc67:BranchNodeDescriptor\" />\r\n      </path>\r\n    </expand>\r\n    <select />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"d7eac86c-ec80-4871-bd6e-dd6935b3bb16\" name=\"Default Changelist\" comment=\"\" />\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"HTML File\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_BRANCH_BY_REPOSITORY\">\r\n      <map>\r\n        <entry key=\"$PROJECT_DIR$\" value=\"master\" />\r\n      </map>\r\n    </option>\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"ProjectId\" id=\"1o0Qy6NFQ2CMxr8qPFt9Ne0Oddm\" />\r\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\" />\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\">\r\n    <property name=\"ASKED_SHARE_PROJECT_CONFIGURATION_FILES\" value=\"true\" />\r\n    <property name=\"DefaultHtmlFileTemplate\" value=\"HTML File\" />\r\n    <property name=\"RunOnceActivity.OpenProjectViewOnStart\" value=\"true\" />\r\n    <property name=\"SHARE_PROJECT_CONFIGURATION_FILES\" value=\"true\" />\r\n    <property name=\"WebServerToolWindowFactoryState\" value=\"false\" />\r\n    <property name=\"vue.rearranger.settings.migration\" value=\"true\" />\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"d7eac86c-ec80-4871-bd6e-dd6935b3bb16\" name=\"Default Changelist\" comment=\"\" />\r\n      <created>1612421295631</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1612421295631</updated>\r\n      <workItem from=\"1612421302293\" duration=\"1828000\" />\r\n    </task>\r\n    <servers />\r\n  </component>\r\n  <component name=\"TypeScriptGeneratedFilesManager\">\r\n    <option name=\"version\" value=\"3\" />\r\n  </component>\r\n  <component name=\"Vcs.Log.Tabs.Properties\">\r\n    <option name=\"oldMeFiltersMigrated\" value=\"true\" />\r\n  </component>\r\n</project>
++Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
++<+>UTF-8
++===================================================================
++--- .idea/workspace.xml	(revision c7342e7deda58b11b5b0fe79cf7b5d89417274d8)
+++++ .idea/workspace.xml	(date 1612488582812)
++@@ -52,6 +52,7 @@
++     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
++     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
++     <property name="WebServerToolWindowFactoryState" value="false" />
+++    <property name="settings.editor.selected.configurable" value="vcs.Git" />
++     <property name="vue.rearranger.settings.migration" value="true" />
++   </component>
++   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
++@@ -72,4 +73,10 @@
++   <component name="Vcs.Log.Tabs.Properties">
++     <option name="oldMeFiltersMigrated" value="true" />
++   </component>
+++  <component name="WindowStateProjectService">
+++    <state x="453" y="151" key="SettingsEditor" timestamp="1612488573808">
+++      <screen x="0" y="0" width="1920" height="1040" />
+++    </state>
+++    <state x="453" y="151" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1612488573808" />
+++  </component>
++ </project>
++\ No newline at end of file
+Index: .idea/shelf/Uncommitted_changes_before_Merge_at_2021_02_05_9_33__Default_Changelist_.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/shelf/Uncommitted_changes_before_Merge_at_2021_02_05_9_33__Default_Changelist_.xml	(date 1612662326004)
++++ .idea/shelf/Uncommitted_changes_before_Merge_at_2021_02_05_9_33__Default_Changelist_.xml	(date 1612662326004)
+@@ -0,0 +1,4 @@
++<changelist name="Uncommitted_changes_before_Merge_at_2021_02_05_9_33_[Default_Changelist]" date="1612488808086" recycled="true" deleted="true">
++  <option name="PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_2021_02_05_9_33_[Default_Changelist]/shelved.patch" />
++  <option name="DESCRIPTION" value="Uncommitted changes before Merge at 2021/02/05 9:33 [Default Changelist]" />
++</changelist>
+\ No newline at end of file
+Index: .idea/shelf/Uncommitted_changes_before_Update_at_2021_02_05_9_18__Default_Changelist_.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/shelf/Uncommitted_changes_before_Update_at_2021_02_05_9_18__Default_Changelist_.xml	(date 1612662326030)
++++ .idea/shelf/Uncommitted_changes_before_Update_at_2021_02_05_9_18__Default_Changelist_.xml	(date 1612662326030)
+@@ -0,0 +1,4 @@
++<changelist name="Uncommitted_changes_before_Update_at_2021_02_05_9_18_[Default_Changelist]" date="1612487981544" recycled="true" deleted="true">
++  <option name="PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021_02_05_9_18_[Default_Changelist]/shelved.patch" />
++  <option name="DESCRIPTION" value="Uncommitted changes before Update at 2021/02/05 9:18 [Default Changelist]" />
++</changelist>
+\ No newline at end of file
+Index: js/flowup.jquery.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- js/flowup.jquery.json	(date 1612662238699)
++++ js/flowup.jquery.json	(date 1612662238699)
+@@ -0,0 +1,38 @@
++{
++    "name": "flowup",
++    "title": "Content flows up as you scroll down.",
++    "description": "A similar effect to the one on the Google+ android app, the content flows up as you scroll down. A similar effect can also be seen on some well-done infinite scroll. This creates that effect without using infinite scroll.",
++    "keywords": [
++        "scroll",
++        "subtle",
++        "flow",
++        "fly-in",
++        "slide-in",
++        "slide-up",
++        "slide"
++    ],
++    "version": "1.0.1",
++    "author": {
++        "name": "Dominik Gorecki",
++        "email": "d@dominikgorecki.com",
++        "url": "http://www.dominikgorecki.com"
++    },
++    "maintainers": [
++        {
++          "name": "Dominik Gorecki",
++          "email": "d@dominikgorecki.com",
++          "url": "http://www.dominikgorecki.com"
++        }
++    ],
++    "licenses": [
++        {
++            "type": "MIT",
++            "url": "http://opensource.org/licenses/MIT"
++        }
++    ],
++    "homepage": "http://www.dominikgorecki.com/download/flow-up/",
++    "docs": "http://www.dominikgorecki.com/download/flow-up/",
++    "dependencies": {
++        "jquery": ">=1.5"
++    }
++}
+Index: js/flowup.js
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- js/flowup.js	(date 1612662238701)
++++ js/flowup.js	(date 1612662238701)
+@@ -0,0 +1,72 @@
++/* 
++ * FlowUp
++ *
++ * Based on Eric Wenn's PullupScroll https://github.com/ericwenn/pullupscroll)
++ * Changes include: 
++ * - custom namespace for functions
++ * - Not dependent on "$" jquery namespace
++ * - Works better on items stacked on top of each other in chrome (does not flicker)
++ * - Added some custom options including durations and y-displacement
++ * - Added ability to control plugin via external CSS instead appending <head>
++ * 
++ */
++
++var dgPull = dgPull || {};
++
++(function($) {$(document).ready(function() {
++
++	$(window).scroll(dgPull.scrollFn);
++});
++ })(jQuery);
++
++(function ( $ ) {
++    $.fn.flowUp = function(e,options) {
++      var settings = $.extend({
++        // Default
++        translateY: 150,
++        duration: .8,
++        externalCSS: false
++      }, options);
++
++    	$(e).addClass('pullup-element');
++    	$(e).each(function(i, el) {
++  			var el = $(el);
++  			if (el.visible(true)) {
++          el.addClass("already-visible"); 
++        }
++        else {
++          el.addClass('opaque');
++        }
++		});
++    // If external CSS is not used, add CSS to head
++    if(!settings.externalCSS)
++    {
++      $("head").append('<style>.come-in{opacity: 1; -ie-transform:translateY('+settings.translateY+'px);-webkit-transform:translateY('+settings.translateY+'px);transform:translateY('+settings.translateY+'px);-webkit-animation:come-in '+settings.duration+'s ease forwards;animation:come-in '+settings.duration+'s ease forwards}.come-in:nth-child(odd){-webkit-animation-duration:'+settings.duration+'s;animation-duration:'+settings.duration+'s}.already-visible{opacity: 1;-ie-transform:translateY(0);-webkit-transform:translateY(0);transform:translateY(0);-webkit-animation:none;animation:none}@-webkit-keyframes come-in{to{-ie-transform:translateY(0);-webkit-transform:translateY(0);transform:translateY(0)}}@keyframes come-in{to{-ie-transform:translateY(0);-webkit-transform:translateY(0);transform:translateY(0)}} .opaque { opacity: 0; }</style>');
++    }
++    return this;
++    };
++ 
++  // TO DO: Take out of jQuery Namespace
++	$.fn.visible = function(partial) {
++		      var $t        = $(this),
++	          $w            = $(window),
++	          viewTop       = $w.scrollTop(),
++	          viewBottom    = viewTop + $w.height(),
++	          _top          = $t.offset().top,
++	          _bottom       = _top + $t.height(),
++	          compareTop    = partial === true ? _bottom : _top,
++	          compareBottom = partial === true ? _top : _bottom;
++	    
++	    return ((compareBottom <= viewBottom) && (compareTop >= viewTop));
++  };
++
++}( jQuery ));
++
++dgPull.scrollFn = function() { 
++  jQuery(".pullup-element").each(function(i, el) {
++    var el = jQuery(el);
++    if (el.visible(true)) {
++      el.addClass("come-in"); 
++      el.removeClass("opaque");
++    }});
++}
+Index: .idea/shelf/Uncommitted_changes_before_Merge_at_2021_02_05_9_42__Default_Changelist_.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/shelf/Uncommitted_changes_before_Merge_at_2021_02_05_9_42__Default_Changelist_.xml	(date 1612662326021)
++++ .idea/shelf/Uncommitted_changes_before_Merge_at_2021_02_05_9_42__Default_Changelist_.xml	(date 1612662326021)
+@@ -0,0 +1,4 @@
++<changelist name="Uncommitted_changes_before_Merge_at_2021_02_05_9_42_[Default_Changelist]" date="1612489558493" recycled="true" deleted="true">
++  <option name="PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_2021_02_05_9_42_[Default_Changelist]/shelved.patch" />
++  <option name="DESCRIPTION" value="Uncommitted changes before Merge at 2021/02/05 9:42 [Default Changelist]" />
++</changelist>
+\ No newline at end of file
+Index: .idea/shelf/Uncommitted_changes_before_Checkout_at_2021_02_05_9_20__Default_Changelist_.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/shelf/Uncommitted_changes_before_Checkout_at_2021_02_05_9_20__Default_Changelist_.xml	(date 1612662326039)
++++ .idea/shelf/Uncommitted_changes_before_Checkout_at_2021_02_05_9_20__Default_Changelist_.xml	(date 1612662326039)
+@@ -0,0 +1,4 @@
++<changelist name="Uncommitted_changes_before_Checkout_at_2021_02_05_9_20_[Default_Changelist]" date="1612488081699" recycled="true" deleted="true">
++  <option name="PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2021_02_05_9_20_[Default_Changelist]/shelved.patch" />
++  <option name="DESCRIPTION" value="Uncommitted changes before Checkout at 2021/02/05 9:20 [Default Changelist]" />
++</changelist>
+\ No newline at end of file
