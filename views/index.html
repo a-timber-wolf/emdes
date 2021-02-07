@@ -1,9 +1,10 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>西安明徳軟件有限公司 -- www..com.cemdesn</title>
+    <title>西安明徳軟件有限公司 -- www.emdes.com.cn</title>
     <!-- 最新的 Bootstrap 核心 CSS 文件 -->
     <link href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
     <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
@@ -11,7 +12,6 @@
     <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
     <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link href="../css/main.css" rel="stylesheet">
-    <link href="../css/main.css" rel="stylesheet" type="text/css">
     <!--页面滚动效果-->
     <script src="../js/flowup.js"></script>
 </head>
@@ -23,12 +23,14 @@
             <div class="column">
                 <nav>
                     <div class="col-md-4 edge">
-                        <img src="../img/logoTitle.png" alt="logo">
+                        <a href="index.html">
+                            <img src="../img/logoTitle.png" alt="logo">
+                        </a>
                     </div>
                     <div class="col-md-8 edge">
                         <ul class="nav nav-pills nav-my">
                             <li class="active">
-                                <a href="#"><span>首页</span></a>
+                                <a href="index.html"><span>首页</span></a>
                             </li>
                             <li>
                                 <a href="#"><span>公司概况</span></a>
@@ -46,7 +48,16 @@
                                 <a href="#"><span>人才招聘</span></a>
                             </li>
                             <li>
-                                <a href="#"><span>联系我们</span></a>
+                                <!--<a>
+                                    <span>
+                                        <select name="联系我们">
+                                            <option value="site">联系我们</option>
+                                            <option value="site">联系地址</option>
+                                            <option value="">地图定位</option>
+                                        </select>
+                                    </span>
+                                </a>-->
+                                <a href="contacts.html"><span>联系我们</span></a>
                             </li>
                         </ul>
                     </div>
@@ -95,7 +106,7 @@
 <div class="container cons div1">
     <div class="row clearfix">
         <!--公司简介-->
-        <div class="col-md-4 column main-1">
+        <div class="col-md-4 column main-1" id="test1">
             <div class="main-in-one">
                 <h3 class="text-2">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-grid-fill" viewBox="0 0 16 16">
@@ -111,7 +122,7 @@
             </div>
         </div>
         <!--新闻中心-->
-        <div class="col-md-4 column main-1">
+        <div class="col-md-4 column main-1" id="test2">
             <div class="main-in-one">
                 <h3 class="text-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-grid-fill" viewBox="0 0 16 16">
                         <path d="M1 2.5A1.5 1.5 0 0 1 2.5 1h3A1.5 1.5 0 0 1 7 2.5v3A1.5 1.5 0 0 1 5.5 7h-3A1.5 1.5 0 0 1 1 5.5v-3zm8 0A1.5 1.5 0 0 1 10.5 1h3A1.5 1.5 0 0 1 15 2.5v3A1.5 1.5 0 0 1 13.5 7h-3A1.5 1.5 0 0 1 9 5.5v-3zm-8 8A1.5 1.5 0 0 1 2.5 9h3A1.5 1.5 0 0 1 7 10.5v3A1.5 1.5 0 0 1 5.5 15h-3A1.5 1.5 0 0 1 1 13.5v-3zm8 0A1.5 1.5 0 0 1 10.5 9h3a1.5 1.5 0 0 1 1.5 1.5v3a1.5 1.5 0 0 1-1.5 1.5h-3A1.5 1.5 0 0 1 9 13.5v-3z" style="color: #0087bd"/>
@@ -142,6 +153,9 @@
                         <a class="n2">2021-02-04</a>
                     </li>
                 </ul>
+                <p>
+                    <a class="btn" href="#">View details »</a>
+                </p>
             </div>
             <div class="main-in-two">
                 <img alt="140x140" src="../img/test.jpg" width="250px" height="250px" style="margin-top: 10%"/>
@@ -223,47 +237,21 @@
 <!--尾部-->
 <div class="w-1 div2">
     <div>
-        <a href="#">联系我们 | </a>
-        <a href="#">网站地图 | </a>
+        <a href="contacts.html">联系我们 |</a>
+        <a href="contacts.html">网站地图 |</a>
         <a href="#">个人信息保护 </a>
     </div>
     <hr class="w-1-1">
     <p>Copyright © Xi’an Ming De Software Co.,Ltd. 2008-2018 All Rights reserved   <a href="#">陕ICP备09000289号</a></p>
-    <!--一键置顶-->
-    <div class="t-top">
-        <a onclick="p_top()">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up-square-fill" viewBox="0 0 16 16" style="width: 35px;height: 35px">
-                <path d="M2 16a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2zm6.5-4.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 1 0z"/>
-            </svg>
-        </a>
-    </div>
 </div>
-<script>
-    /*一键置顶*/
-    function p_top() {
-        $('body,html').animate({
-            scrollTop: 0
-        }, 800);
-        return false;
-    }
-    /*页面滚动效果*/
-    $(function(){
-        $("body").flowUp("div", { transalteY: 350, duration: 1 });
-    });
-    /*$(".t-top").hide();*/
-    $(function () {
-        $(window).scroll(function () {      //当我们操作页面滚动时,会触发该方法
-            if ($(window).scrollTop() > 0) {
-                $(".t-right-bar").fadeIn(500);
-            }
-            else {
-                $(".t-right-bar").fadeOut(500);
-            }
-        });
-        $('body,html').animate({
-            scrollTop: 0
-        }, 800);
-    });
-</script>
+<!--一键置顶-->
+<div class="t-top" style="float: right;position: fixed;right: 4%;bottom: 4%">
+    <a onclick="p_top()">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up-square-fill" viewBox="0 0 16 16" style="width: 35px;height: 35px">
+            <path d="M2 16a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2zm6.5-4.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 1 0z"/>
+        </svg>
+    </a>
+</div>
+<script src="../js/main.js" type="text/javascript"></script>
 </body>
 </html>

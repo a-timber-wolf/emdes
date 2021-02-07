@@ -22,6 +22,7 @@
 .n1 {
     float: left;
     float: none;
+    /*display: none;*/
 }
 .n2 {
     float: right;
@@ -59,8 +60,7 @@ ul {
 .w-1 {
     width: 100%;
     height: 200px;
-    /*background: #ddd;*/
-    background:transparent;
+    background: #ddd;
     text-align: center;
     padding-top: 30px;
 }
@@ -68,6 +68,35 @@ ul {
     border-bottom: 2px #999 solid;
     margin-top: 0px;
     width: 1100px;
+}
+
+.edge {
+    padding: 0;
+    /* 上右下左 */
+    margin: 10px 0 10px 0;
+}
+span {
+    color: black;
+    font-size: 18px;
+}
+
+.nav-my {
+}
+
+.nav-pills > li.active > a,
+.nav-pills > li.active > a:hover,
+.nav-pills > li.active > a:focus {
+    /*color: #fff;*/
+    background-color: lightblue;
+}
+
+.nav > li > a:hover,
+.nav > li > a:focus {
+    text-decoration: none;
+    background-color: lightblue;
+}
+.cons {
+    margin-top: 30px;
 }
 
 .edge {
