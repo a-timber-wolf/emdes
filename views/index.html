@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>西安明徳軟件有限公司 -- www.emdes.com.cn</title>
+    <title>西安明徳軟件有限公司 -- www..com.cemdesn</title>
     <!-- 最新的 Bootstrap 核心 CSS 文件 -->
     <link href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
     <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
@@ -13,7 +13,6 @@
     <link href="../css/main.css" rel="stylesheet">
     <link href="../css/main.css" rel="stylesheet" type="text/css">
     <!--页面滚动效果-->
-    <script src="http://www.lanrenzhijia.com/ajaxjs/1.10.1/jquery-1.10.1.min.js"></script>
     <script src="../js/flowup.js"></script>
 </head>
 <body>
@@ -231,7 +230,7 @@
     <hr class="w-1-1">
     <p>Copyright © Xi’an Ming De Software Co.,Ltd. 2008-2018 All Rights reserved   <a href="#">陕ICP备09000289号</a></p>
     <!--一键置顶-->
-    <div class="t-top" style="float: right;position: fixed;right: 4%;">
+    <div class="t-top">
         <a onclick="p_top()">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up-square-fill" viewBox="0 0 16 16" style="width: 35px;height: 35px">
                 <path d="M2 16a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2zm6.5-4.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 1 0z"/>
@@ -251,14 +250,14 @@
     $(function(){
         $("body").flowUp("div", { transalteY: 350, duration: 1 });
     });
-    $(".t-top").hide();
+    /*$(".t-top").hide();*/
     $(function () {
-        $(window).scroll(function () {
-            if ($(window).scrollTop() > 100) {
-                $(".t-top").fadeIn(500);
+        $(window).scroll(function () {      //当我们操作页面滚动时,会触发该方法
+            if ($(window).scrollTop() > 0) {
+                $(".t-right-bar").fadeIn(500);
             }
             else {
-                $(".t-top").fadeOut(500);
+                $(".t-right-bar").fadeOut(500);
             }
         });
         $('body,html').animate({

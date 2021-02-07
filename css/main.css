@@ -59,7 +59,8 @@ ul {
 .w-1 {
     width: 100%;
     height: 200px;
-    background: #ddd;
+    /*background: #ddd;*/
+    background:transparent;
     text-align: center;
     padding-top: 30px;
 }
