@@ -19,6 +19,30 @@
     <select>
       <path>
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:main" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </select>
+  </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:github" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
         <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
         <item name="GROUP_NODE:github" type="e8cecc67:BranchNodeDescriptor" />
         <item name="BRANCH:github/master" type="e8cecc67:BranchNodeDescriptor" />
@@ -27,7 +51,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d7eac86c-ec80-4871-bd6e-dd6935b3bb16" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/views/company.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/ShufflingFigureOne.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/ShufflingFigureTwo.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/logoTitle.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/views/index.html" afterDir="false" />
@@ -45,13 +71,12 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="JsFlowSettings">
-    <service-enabled>true</service-enabled>
-    <exe-path />
-    <other-services-enabled>true</other-services-enabled>
-    <auto-save>true</auto-save>
   </component>
   <component name="ProjectId" id="1o0Qy6NFQ2CMxr8qPFt9Ne0Oddm" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -65,7 +90,21 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="JavaScript.Libraries" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -76,10 +115,21 @@
       <option name="presentableId" value="Default" />
       <updated>1612421295631</updated>
       <workItem from="1612421302293" duration="1828000" />
+<<<<<<< HEAD
+<<<<<<< HEAD
       <workItem from="1612421302293" duration="2472000" />
       <workItem from="1612428085318" duration="5066000" />
       <workItem from="1612486943207" duration="102000" />
       <workItem from="1612488652718" duration="13930000" />
+      <workItem from="1612660577517" duration="703000" />
+      <workItem from="1612486943207" duration="102000" />
+      <workItem from="1612488652718" duration="13930000" />
+=======
+      <workItem from="1612421302293" duration="1828000" />
+>>>>>>> d4f528722de7e8910dd6cbddf555a5871c5bbde3
+=======
+      <workItem from="1612421302293" duration="1828000" />
+>>>>>>> d4f528722de7e8910dd6cbddf555a5871c5bbde3
     </task>
     <servers />
   </component>
@@ -110,10 +160,57 @@
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
+<<<<<<< HEAD
+  <component name="WindowStateProjectService">
+    <state x="164" y="63" key="MergeDialog" timestamp="1612507774145">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="164" y="63" key="MergeDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1612507774145" />
+    <state x="619" y="302" key="SettingsEditor" timestamp="1612511039475">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="619" y="302" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1612511039475" />
+    <state x="768" y="175" width="672" height="684" key="search.everywhere.popup" timestamp="1612495607117">
+      <screen x="0" y="0" width="1440" height="860" />
+    </state>
+    <state x="768" y="175" width="672" height="684" key="search.everywhere.popup/0.0.1440.860@0.0.1440.860" timestamp="1612495607117" />
+=======
+<<<<<<< HEAD
   <component name="WindowStateProjectService">
     <state x="768" y="175" width="672" height="684" key="search.everywhere.popup" timestamp="1612495607117">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
     <state x="768" y="175" width="672" height="684" key="search.everywhere.popup/0.0.1440.860@0.0.1440.860" timestamp="1612495607117" />
+=======
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="47" y="0" width="1822" height="959" key="MergeDialog" timestamp="1612489552707">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="47" y="0" width="1822" height="959" key="MergeDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1612489552707" />
+    <state x="594" y="277" key="MultipleFileMergeDialog" timestamp="1612489552723">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="594" y="277" key="MultipleFileMergeDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1612489552723" />
+    <state x="537" y="327" width="888" height="542" key="find.popup" timestamp="1612502231932">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="537" y="327" width="888" height="542" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1612502231932" />
+    <state x="727" y="229" key="git4idea.branch.GitSmartOperationDialog" timestamp="1612489355959">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="727" y="229" key="git4idea.branch.GitSmartOperationDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1612489355959" />
+>>>>>>> d4f528722de7e8910dd6cbddf555a5871c5bbde3
   </component>
 </project>

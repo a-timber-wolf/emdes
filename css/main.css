@@ -124,34 +124,6 @@ span {
     text-decoration: none;
     background-color: lightblue;
 }
-
-.dropdown-menu > li > a:hover,
-.dropdown-menu > li > a:focus {
-    color: #262626;
-    text-decoration: none;
-    background-color: lightblue;
-}
-
-.site-z {
-    border-bottom: 3px solid #0087bd;
-    width: 80%;
-    margin-top: 16px;
-}
-
-.site-z-1 {
-    margin-left: 20px;
-    font-size: 18px;
-    font-family: STFangsong;
-}
-
-.com-p-s {
-    margin-left: 7%;
-}
-
-.main-asb {
-    margin-top: 10px;
-    margin-left: 20%;
-}
 .cons {
     margin-top: 30px;
 }
