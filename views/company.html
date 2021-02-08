@@ -10,6 +10,8 @@
     <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
     <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link href="../css/main.css" rel="stylesheet">
+    <link href="../css/contacts.css" rel="stylesheet">
+    <link href="../css/company.css" rel="stylesheet">
     <!--页面滚动效果-->
     <script src="../js/flowup.js"></script>
 </head>
@@ -24,7 +26,7 @@
                         <img src="../img/logoTitle.png" alt="logo">
                     </div>
                     <div class="col-md-8 edge">
-                        <ul class="nav nav-pills nav-my">
+                        <ul class="nav nav-pills nav-my" id="ul_header">
                             <li class="active">
                                 <a href="index.html"><span>首页</span></a>
                             </li>
@@ -32,10 +34,10 @@
                                 <a href="company.html"><span>公司概况</span></a>
                             </li>
                             <li>
-                                <a href="#"><span>事业内容</span></a>
+                                <a href="introduction.html"><span>事业内容</span></a>
                             </li>
                             <li>
-                                <a href="#"><span>开发体制</span></a>
+                                <a href="development.html"><span>开发体制</span></a>
                             </li>
                             <li>
                                 <a href="#"><span>企业文化</span></a>
@@ -44,7 +46,7 @@
                                 <a href="#"><span>人才招聘</span></a>
                             </li>
                             <li>
-                                <a href="#"><span>联系我们</span></a>
+                                <a href="contacts.html"><span>联系我们</span></a>
                             </li>
                         </ul>
                     </div>
@@ -64,47 +66,173 @@
     </div>
 </div>
 
-<!--主体内容部分-->
-<div class="container" style="margin-top: 30px; display: none" id="test">
-    <div class="row clearfix">
-        <!--公司概要-->
-        <div class="main-asb">
-            <a href="index.html">首页</a>
-            <svg t="1612677966234" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1515" width="17" height="17" style="vertical-align: sub">
-                <path d="M870.334 514.725l-713.943 419.15 205.529-424.557-208.254-419.193z" fill="#30afa3" p-id="1516"></path>
-            </svg>
-            <a href="company.html">公司概况</a>
+<!--中间内容部分-->
+<div class="main-asb">
+    <div>
+        <a href="index.html">首页</a>
+        <svg x="1612677966234" class="icon" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" width="17" height="17" style="vertical-align: sub">
+            <path d="M870.334 514.725l-713.943 419.15 205.529-424.557-208.254-419.193z" fill="#30afa3"></path>
+        </svg>
+        <a href="company.html">公司概况</a>
+    </div>
+    <div>
+        <div class="site-z">
+            <span class="site-z-1">公司摘要</span>
         </div>
         <div>
-            <div class="site-z">
-                <span class="site-z-1">公司概要</span>
-            </div>
             <div>
-                <div>
-                    <p class="com-p-s">
-                        &nbsp西安明德软件有限公司是日本EMD公司投资的中国现地法人公司，成立于2008年12月。 公司面向日本企业以及中国国内企业提供软件设计开发、技术支持服务、 系统维护服务以及咨询服务的高科技公司。
-                    </p>
-                    <br>
-                    <p class="com-p-s">
-                        公司依托EMD多年来的软件开发经验，目前为多家日本公司提供软件外包开发服务， 其中在制造、流通、医疗、金融等领域的设计开发，博得客户的高度好评。
-                    </p>
-                    <br>
-                    <p class="com-p-s">
-                        公司秉承“诚实守信、以人为本、切磋琢磨、持续改善”的行动原则， 致力于构筑中日软件开发的桥梁，为客户提供感动的高附加价值的产品和服务。
-                    </p>
-                </div>
+                <p class="com-p-s"><br>
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp西安明德软件有限公司是日本EMD公司投资的中国现地法人公司，成立于2008年12月。 公司面向日本企业以及中国国内企业提供软件设计开发、技术支持服<br>
+                    务、 系统维护服务以及咨询服务的高科技公司。
+                </p>
+                <br>
+                <p class="com-p-s">
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp公司依托EMD多年来的软件开发经验，目前为多家日本公司提供软件外包开发服务， 其中在制造、流通、医疗、金融等领域的设计开发，博得客户的高度好评。
+                </p>
+                <br>
+                <p class="com-p-s">
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp公司秉承“诚实守信、以人为本、切磋琢磨、持续改善”的行动原则， 致力于构筑中日软件开发的桥梁，为客户提供感动的高附加价值的产品和服务。
+                </p>
             </div>
         </div>
-
+    </div>
+    <div>
+        <div class="site-z">
+            <span class="site-z-1">公司概况</span>
+        </div>
+        <div>
+            <div style="width: 80%">
+                <br>
+                <table class="table table-hover table-bordered table-c">
+                    <tbody>
+                        <tr>
+                            <th>公司名称</th>
+                            <td>西安明德软件有限公司</td>
+                        </tr>
+                        <tr>
+                            <th>成立日</th>
+                            <td>2008年12月</td>
+                        </tr>
+                        <tr>
+                            <th>注册资金</th>
+                            <td>US$100,000</td>
+                        </tr>
+                        <tr>
+                            <th>公司地址</th>
+                            <td>中国西安高新区科技二路72号西安软件园西岳阁406室</td>
+                        </tr>
+                        <tr>
+                            <th>电话</th>
+                            <td>029-8760-7523</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div class="site-z">
+            <span class="site-z-1">关联企业</span>
+        </div>
+        <div>
+            <table style="width: 80%" class="com-p-s">
+                <tr>
+                    <td style="width: 30%">
+                        <div>
+                            <br>
+                            <svg x="1612687385774" class="icon" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" width="17" height="17">
+                                <path d="M35.245158 658.68317L527.750517 13.775698l460.645434 351.811623L495.871272 1010.475472z" fill="#87a7d6"></path>
+                                <path d="M529.682592 27.242264l444.377359 340.045283-479.927547 629.470189L48.789008 656.90566 529.682592 27.242264M526.011649 0L21.739951 660.383396l476.063396 363.616604 504.271698-660.190189L526.011649 0z" fill="#87a7d6"></path>
+                            </svg>
+                            <span style="font-size: 16px;">东京开发中心</span>
+                            <ul><li role="presentation" class="divider"></li></ul>
+                            <p>
+                                〒171-0022<br>
+                                東京都豊島区南池袋1-12-7　MIビル7F<br>
+                                TEL  03-5927-1674   FAX  03-5927-1678<br>
+                            </p>
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <br>
+                            <svg x="1612687385774" class="icon" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" width="17" height="17">
+                                <path d="M35.245158 658.68317L527.750517 13.775698l460.645434 351.811623L495.871272 1010.475472z" fill="#87a7d6"></path>
+                                <path d="M529.682592 27.242264l444.377359 340.045283-479.927547 629.470189L48.789008 656.90566 529.682592 27.242264M526.011649 0L21.739951 660.383396l476.063396 363.616604 504.271698-660.190189L526.011649 0z" fill="#87a7d6"></path>
+                            </svg>
+                            <span style="font-size: 16px;">东北支社仙台开发中心</span>
+                            <ul><li role="presentation" class="divider"></li></ul>
+                            <p>
+                                〒980-0803<br>
+                                宮城県仙台市青葉区国分町３丁目１１‐９　アルファオフィスビル401号室<br>
+                                TEL  022-395-8651   FAX  022-395-8613<br>
+                            </p>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 30%">
+                        <div>
+                            <br>
+                            <svg x="1612687385774" class="icon" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" width="17" height="17">
+                                <path d="M35.245158 658.68317L527.750517 13.775698l460.645434 351.811623L495.871272 1010.475472z" fill="#87a7d6"></path>
+                                <path d="M529.682592 27.242264l444.377359 340.045283-479.927547 629.470189L48.789008 656.90566 529.682592 27.242264M526.011649 0L21.739951 660.383396l476.063396 363.616604 504.271698-660.190189L526.011649 0z" fill="#87a7d6"></path>
+                            </svg>
+                            <span style="font-size: 16px;">中部支社名古屋开发中心</span>
+                            <ul><li role="presentation" class="divider"></li></ul>
+                            <p>
+                                〒460-0003<br>
+                                愛知県名古屋市中区錦1-7-27　三同錦５階A<br>
+                                TEL  052-684-4108   FAX  052-684-4109<br>
+                            </p>
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <br>
+                            <svg x="1612687385774" class="icon" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" width="17" height="17">
+                                <path d="M35.245158 658.68317L527.750517 13.775698l460.645434 351.811623L495.871272 1010.475472z" fill="#87a7d6"></path>
+                                <path d="M529.682592 27.242264l444.377359 340.045283-479.927547 629.470189L48.789008 656.90566 529.682592 27.242264M526.011649 0L21.739951 660.383396l476.063396 363.616604 504.271698-660.190189L526.011649 0z" fill="#87a7d6"></path>
+                            </svg>
+                            <span style="font-size: 16px;">埼玉开发中心</span>
+                            <ul><li role="presentation" class="divider"></li></ul>
+                            <p>
+                                〒338-0001<br>
+                                埼玉県さいたま市中央区上落合2丁目3番地2 新都心ビジネス交流プラザ809号室<br>
+                                TEL  048-789-7860<br>
+                            </p>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 30%">
+                        <div>
+                            <br>
+                            <svg x="1612687385774" class="icon" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" width="17" height="17">
+                                <path d="M35.245158 658.68317L527.750517 13.775698l460.645434 351.811623L495.871272 1010.475472z" fill="#87a7d6"></path>
+                                <path d="M529.682592 27.242264l444.377359 340.045283-479.927547 629.470189L48.789008 656.90566 529.682592 27.242264M526.011649 0L21.739951 660.383396l476.063396 363.616604 504.271698-660.190189L526.011649 0z" fill="#87a7d6"></path>
+                            </svg>
+                            <span style="font-size: 16px;">横浜开发中心</span>
+                            <ul><li role="presentation" class="divider"></li></ul>
+                            <p>
+                                〒220-0004<br>
+                                神奈川県横浜市西区北幸一丁目11番5号 相鉄KSビル<br>
+                                TEL  045-287-0801<br>
+                            </p>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
     </div>
 </div>
 
 <!--尾部-->
 <div class="w-1">
     <div>
-        <a href="#">联系我们 | </a>
-        <a href="#">网站地图 | </a>
-        <a href="#">个人信息保护 </a>
+        <a href="contacts.html">联系我们 | </a>
+        <a href="contacts.html">网站地图 | </a>
+        <a href="protect.html">个人信息保护 </a>
     </div>
     <hr class="w-1-1">
     <p>Copyright © Xi’an Ming De Software Co.,Ltd. 2008-2018 All Rights reserved   <a href="#">陕ICP备09000289号</a></p>

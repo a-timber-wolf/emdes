@@ -1,0 +1,12 @@
+th {
+    background-color: lightblue;
+    text-align: center;
+}
+td {
+    width: 80%;
+}
+.table-c {
+    width: 40%;
+    text-align: center;
+    margin-left: 25%;
+}

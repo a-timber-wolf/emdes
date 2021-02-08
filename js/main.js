@@ -4,6 +4,7 @@
 $(document).ready(function () {
     // $("#test1").animate({bottom:'200px'},1000);
     $("#test").fadeIn(2000);
+    $("#protect").fadeIn(2000);
 });
 
 /*一键置顶*/

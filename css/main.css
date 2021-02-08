@@ -20,7 +20,7 @@
     display:inline;
 }
 .n1 {
-    float: left;
+    /*float: left;*/
     float: none;
     /*display: none;*/
 }
@@ -44,7 +44,7 @@ ul {
 .text-2 {
     font-size: 22px;
     font-weight: bold;
-    font-family: STFangsong;
+    font-family: STFangsong, serif;
 }
 .di-1 {
     display: inline-block;
@@ -63,10 +63,11 @@ ul {
     background: #ddd;
     text-align: center;
     padding-top: 30px;
+    margin-top: 30px;
 }
 .w-1-1 {
     border-bottom: 2px #999 solid;
-    margin-top: 0px;
+    margin-top: 0;
     width: 1100px;
 }
 
@@ -95,9 +96,6 @@ span {
     text-decoration: none;
     background-color: lightblue;
 }
-.cons {
-    margin-top: 30px;
-}
 
 .edge {
     padding: 0;
@@ -126,4 +124,24 @@ span {
 }
 .cons {
     margin-top: 30px;
+}
+
+.clearfix:after {
+    clear: both;
+}
+.intro-img {
+    float: left;
+    margin-top: 16px;
+    margin-left: 10%;
+}
+
+.p-intro {
+    float: right;
+    margin-right: 30%;
+    margin-top: 16px;
+}
+
+.svg-list {
+    float: left;
+    margin-top: 5px;
 }
