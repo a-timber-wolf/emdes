@@ -63,6 +63,7 @@ ul {
     background: #ddd;
     text-align: center;
     padding-top: 30px;
+    margin-top: 30px;
 }
 .w-1-1 {
     border-bottom: 2px #999 solid;
@@ -125,5 +126,57 @@ span {
     background-color: lightblue;
 }
 .cons {
+    margin-top: 30px;
+}
+/*首页-小标题*/
+.main-asb {
+    margin-left: 20%;
+    margin-top: 10px;
+}
+.site-z {
+    border-bottom: 3px solid #0087bd;
+    width: 80%;
+    margin-top: 16px;
+}
+.site-z-1 {
+    margin-left: 20px;
+    font-size: 18px;
+    font-family: STFangsong;
+}
+.com-p-s {
+    margin-left: 7%;
+}
+.map-i {
+    margin-left: 15%;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+.th-1 {
+    width:150px;
+    text-align: center;
+    background-color: #fcf8e3;
+    font-size: 14px;
+}
+.tr-1 {
+    text-align: center;
+    width: 630px;
+    height: 35px;
+    font-size: 17px;
+    background-color: #fcf8e3;
+}
+.th-a-1 {
+    vertical-align: text-top;
+    margin-left: 12px;
+    margin-right: 5px;
+}
+.th-a-2 {
+    font-size: 14px;
+}
+.map-1-d {
+    margin-top: 16px;
+    margin-bottom: 15px;
+}
+.cult-1 {
+    margin-left: 10%;
     margin-top: 30px;
 }
