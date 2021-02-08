@@ -132,16 +132,22 @@ span {
 .clearfix:after {
     clear: both;
 }
+.intro-div {
+    margin-left: 10%;
+    width: 80%;
+}
 .intro-img {
     float: left;
     margin-top: 16px;
     margin-left: 10%;
+    width: 40%;
 }
 
 .p-intro {
     float: right;
-    margin-right: 30%;
+    margin-right: 10%;
     margin-top: 16px;
+    width: 40%;
 }
 
 .svg-list {
@@ -152,10 +158,11 @@ span {
 .main-asb {
     margin-left: 20%;
     margin-top: 10px;
+    width: 60%;
 }
 .site-z {
     border-bottom: 3px solid #0087bd;
-    width: 80%;
+    width: 100%;
     margin-top: 16px;
 }
 .site-z-1 {
@@ -165,6 +172,7 @@ span {
 }
 .com-p-s {
     margin-left: 7%;
+    width: 86%;
 }
 .map-i {
     margin-left: 15%;
@@ -199,4 +207,13 @@ span {
 .cult-1 {
     margin-left: 10%;
     margin-top: 30px;
+}
+
+.hand {
+    cursor: pointer;
+    float:left;
+    width:30px;
+    height:20px;
+    line-height:20px;
+    background-color:#0082C1;
 }
