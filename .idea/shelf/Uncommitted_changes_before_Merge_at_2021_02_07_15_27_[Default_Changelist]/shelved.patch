@@ -1,0 +1,210 @@
+Index: views/index.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><!DOCTYPE html>\r\n<html lang=\"en\">\r\n<head>\r\n    <meta charset=\"UTF-8\">\r\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\r\n    <title>西安明徳軟件有限公司 -- www.emdes.com.cn</title>\r\n    <!-- 最新的 Bootstrap 核心 CSS 文件 -->\r\n    <link href=\"https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css\" rel=\"stylesheet\">\r\n    <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->\r\n    <script src=\"https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js\"></script>\r\n    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->\r\n    <script src=\"https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js\"></script>\r\n    <link href=\"../css/main.css\" rel=\"stylesheet\">\r\n    <!--页面滚动效果-->\r\n<!--    <script src=\"http://www.lanrenzhijia.com/ajaxjs/1.10.1/jquery-1.10.1.min.js\"></script>-->\r\n    <script src=\"../js/flowup.js\"></script>\r\n\r\n</head>\r\n<body>\r\n<!--头部-->\r\n<div class=\"div1\" style=\"width: 100%;overflow: auto\">\r\n    <div class=\"container\">\r\n        <div class=\"row clearfix\">\r\n            <div class=\"column\">\r\n                <nav>\r\n                    <div class=\"col-md-4 edge\">\r\n                        <img src=\"../img/logoTitle.png\" alt=\"logo\">\r\n                    </div>\r\n                    <div class=\"col-md-8 edge\">\r\n                        <ul class=\"nav nav-pills nav-my\">\r\n                            <li class=\"active\">\r\n                                <a href=\"#\"><span>首页</span></a>\r\n                            </li>\r\n                            <li>\r\n                                <a href=\"#\"><span>公司概况</span></a>\r\n                            </li>\r\n                            <li>\r\n                                <a href=\"#\"><span>事业内容</span></a>\r\n                            </li>\r\n                            <li>\r\n                                <a href=\"#\"><span>开发体制</span></a>\r\n                            </li>\r\n                            <li>\r\n                                <a href=\"#\"><span>企业文化</span></a>\r\n                            </li>\r\n                            <li>\r\n                                <a href=\"#\"><span>人才招聘</span></a>\r\n                            </li>\r\n                            <li>\r\n                                <a href=\"#\"><span>联系我们</span></a>\r\n                            </li>\r\n                        </ul>\r\n                    </div>\r\n                </nav>\r\n            </div>\r\n        </div>\r\n    </div>\r\n</div>\r\n<!--轮播部分-->\r\n<div class=\"div2\" style=\"width: 100%;overflow: auto\">\r\n    <div class=\"container-fluid\">\r\n        <div class=\"row clearfix\">\r\n            <div class=\"column\">\r\n                <div id=\"myCarousel\" class=\"carousel slide\" data-ride=\"carousel\" data-interval=\"3000\">\r\n                    <!-- 轮播（Carousel）指标 -->\r\n                    <ol class=\"carousel-indicators\">\r\n                        <li data-target=\"#myCarousel\" data-slide-to=\"0\" class=\"active\"></li>\r\n                        <li data-target=\"#myCarousel\" data-slide-to=\"1\"></li>\r\n                    </ol>\r\n                    <!-- 轮播（Carousel）项目 -->\r\n                    <div class=\"carousel-inner\" style=\"height: 600px\">\r\n                        <div class=\"item active\">\r\n                            <img src=\"../img/slide4.jpg\" alt=\"First\" width=\"100%\" height=\"auto\" style=\"vertical-align: middle\">\r\n                            <div class=\"carousel-caption\"></div>\r\n                        </div>\r\n                        <div class=\"item\">\r\n                            <img src=\"../img/slide5.jpg\" alt=\"Second\" width=\"100%\" height=\"auto\">\r\n                            <div class=\"carousel-caption\"></div>\r\n                        </div>\r\n                    </div>\r\n                    <!-- 轮播（Carousel）导航 -->\r\n                    <a class=\"left carousel-control\" href=\"#myCarousel\" role=\"button\" data-slide=\"prev\">\r\n                        <span class=\"glyphicon glyphicon-chevron-left\" aria-hidden=\"true\"></span>\r\n                        <span class=\"sr-only\">Previous</span>\r\n                    </a>\r\n                    <a class=\"right carousel-control\" href=\"#myCarousel\" role=\"button\" data-slide=\"next\">\r\n                        <span class=\"glyphicon glyphicon-chevron-right\" aria-hidden=\"true\"></span>\r\n                        <span class=\"sr-only\">Next</span>\r\n                    </a>\r\n                </div>\r\n            </div>\r\n        </div>\r\n    </div>\r\n</div>\r\n\r\n<!--主体内容部分-->\r\n<div class=\"container\" style=\"margin-top: 30px; display: none\" id=\"test\">\r\n    <div class=\"row clearfix\">\r\n        <!--公司简介-->\r\n        <div class=\"col-md-4 column main-1\" id=\"test1\">\r\n            <div class=\"main-in-one\">\r\n                <h3 class=\"text-2\">\r\n                    <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\" fill=\"currentColor\" class=\"bi bi-grid-fill\" viewBox=\"0 0 16 16\">\r\n                        <path d=\"M1 2.5A1.5 1.5 0 0 1 2.5 1h3A1.5 1.5 0 0 1 7 2.5v3A1.5 1.5 0 0 1 5.5 7h-3A1.5 1.5 0 0 1 1 5.5v-3zm8 0A1.5 1.5 0 0 1 10.5 1h3A1.5 1.5 0 0 1 15 2.5v3A1.5 1.5 0 0 1 13.5 7h-3A1.5 1.5 0 0 1 9 5.5v-3zm-8 8A1.5 1.5 0 0 1 2.5 9h3A1.5 1.5 0 0 1 7 10.5v3A1.5 1.5 0 0 1 5.5 15h-3A1.5 1.5 0 0 1 1 13.5v-3zm8 0A1.5 1.5 0 0 1 10.5 9h3a1.5 1.5 0 0 1 1.5 1.5v3a1.5 1.5 0 0 1-1.5 1.5h-3A1.5 1.5 0 0 1 9 13.5v-3z\" style=\"color: #0087bd\"/>\r\n                    </svg>&nbsp公司简介\r\n                </h3>\r\n                <p class=\"text-1\">\r\n                    西安明德软件有限公司是日本EMD公司投资的中国现地法人公司，成立于2008年12月。公司面向日本企业以及中国国内企业提供软件设计开发、技术支持服务、系统维护服务以及咨询服务的高科技公司。\r\n                </p>\r\n            </div>\r\n            <div class=\"main-in-two\">\r\n                <img alt=\"140x140\" src=\"../img/test.jpg\" width=\"250px\" height=\"250px\" style=\"margin-top: 10%\"/>\r\n            </div>\r\n        </div>\r\n        <!--新闻中心-->\r\n        <div class=\"col-md-4 column main-1\" id=\"test2\">\r\n            <div class=\"main-in-one\">\r\n                <h3 class=\"text-2\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\" fill=\"currentColor\" class=\"bi bi-grid-fill\" viewBox=\"0 0 16 16\">\r\n                        <path d=\"M1 2.5A1.5 1.5 0 0 1 2.5 1h3A1.5 1.5 0 0 1 7 2.5v3A1.5 1.5 0 0 1 5.5 7h-3A1.5 1.5 0 0 1 1 5.5v-3zm8 0A1.5 1.5 0 0 1 10.5 1h3A1.5 1.5 0 0 1 15 2.5v3A1.5 1.5 0 0 1 13.5 7h-3A1.5 1.5 0 0 1 9 5.5v-3zm-8 8A1.5 1.5 0 0 1 2.5 9h3A1.5 1.5 0 0 1 7 10.5v3A1.5 1.5 0 0 1 5.5 15h-3A1.5 1.5 0 0 1 1 13.5v-3zm8 0A1.5 1.5 0 0 1 10.5 9h3a1.5 1.5 0 0 1 1.5 1.5v3a1.5 1.5 0 0 1-1.5 1.5h-3A1.5 1.5 0 0 1 9 13.5v-3z\" style=\"color: #0087bd\"/>\r\n                    </svg>&nbsp新闻中心\r\n                </h3>\r\n                <ul>\r\n                    <!--动态的添加公司最新新闻-->\r\n                    <a id=\"\"></a>\r\n                    <li class=\"lss\">\r\n                        <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\" fill=\"currentColor\" class=\"bi bi-caret-right-fill\" viewBox=\"0 0 16 16\" style=\"vertical-align: sub\">\r\n                            <path d=\"M12.14 8.753l-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z\" class=\"a1\"/>\r\n                        </svg>\r\n                        <a class=\"n1\" href=\"#\">★西安明德软件有限公司的主页改版</a>\r\n                        <a class=\"n2\">2021-02-04</a>\r\n                    </li>\r\n                    <li class=\"lss\">\r\n                        <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\" fill=\"currentColor\" class=\"bi bi-caret-right-fill\" viewBox=\"0 0 16 16\" style=\"vertical-align: sub\">\r\n                            <path d=\"M12.14 8.753l-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z\" class=\"a1\"/>\r\n                        </svg>\r\n                        <a class=\"n1\" href=\"#\">★日本岐阜电视台采访株式会社EMD</a>\r\n                        <a class=\"n2\">2021-02-04</a>\r\n                    </li>\r\n                    <li class=\"lss\">\r\n                        <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\" fill=\"currentColor\" class=\"bi bi-caret-right-fill\" viewBox=\"0 0 16 16\" style=\"vertical-align: sub\">\r\n                            <path d=\"M12.14 8.753l-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z\" class=\"a1\"/>\r\n                        </svg>\r\n                        <a class=\"n1\" href=\"#\">★西安明德软件有限公司成立</a>\r\n                        <a class=\"n2\">2021-02-04</a>\r\n                    </li>\r\n                </ul>\r\n                <p>\r\n                    <a class=\"btn\" href=\"#\">View details »</a>\r\n                </p>\r\n            </div>\r\n            <div class=\"main-in-two\">\r\n                <img alt=\"140x140\" src=\"../img/test.jpg\" width=\"250px\" height=\"250px\" style=\"margin-top: 10%\"/>\r\n            </div>\r\n        </div>\r\n        <!--解决方案-->\r\n        <div class=\"col-md-4 column main-1\">\r\n            <div class=\"main-in-one\">\r\n                <h3 class=\"text-2\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\" fill=\"currentColor\" class=\"bi bi-grid-fill\" viewBox=\"0 0 16 16\">\r\n                        <path d=\"M1 2.5A1.5 1.5 0 0 1 2.5 1h3A1.5 1.5 0 0 1 7 2.5v3A1.5 1.5 0 0 1 5.5 7h-3A1.5 1.5 0 0 1 1 5.5v-3zm8 0A1.5 1.5 0 0 1 10.5 1h3A1.5 1.5 0 0 1 15 2.5v3A1.5 1.5 0 0 1 13.5 7h-3A1.5 1.5 0 0 1 9 5.5v-3zm-8 8A1.5 1.5 0 0 1 2.5 9h3A1.5 1.5 0 0 1 7 10.5v3A1.5 1.5 0 0 1 5.5 15h-3A1.5 1.5 0 0 1 1 13.5v-3zm8 0A1.5 1.5 0 0 1 10.5 9h3a1.5 1.5 0 0 1 1.5 1.5v3a1.5 1.5 0 0 1-1.5 1.5h-3A1.5 1.5 0 0 1 9 13.5v-3z\" style=\"color: #0087bd\"/>\r\n                    </svg>&nbsp解决方案\r\n                </h3>\r\n                <ul>\r\n                    <li class=\"lss\">\r\n                        <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\" fill=\"currentColor\" class=\"bi bi-caret-right-fill\" viewBox=\"0 0 16 16\" style=\"vertical-align: sub\">\r\n                            <path d=\"M12.14 8.753l-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z\" class=\"a1\"/>\r\n                        </svg>\r\n                        <a href=\"#\">集团OA办公解决方案</a>\r\n                    </li>\r\n                    <li class=\"lss\">\r\n                        <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\" fill=\"currentColor\" class=\"bi bi-caret-right-fill\" viewBox=\"0 0 16 16\" style=\"vertical-align: sub\">\r\n                            <path d=\"M12.14 8.753l-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z\" class=\"a1\"/>\r\n                        </svg>\r\n                        <a href=\"#\">人力资源解决方案</a>\r\n                    </li>\r\n                    <li class=\"lss\">\r\n                        <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\" fill=\"currentColor\" class=\"bi bi-caret-right-fill\" viewBox=\"0 0 16 16\" style=\"vertical-align: sub\">\r\n                            <path d=\"M12.14 8.753l-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z\" class=\"a1\"/>\r\n                        </svg>\r\n                        <a href=\"#\">物流仓储解决方案</a>\r\n                    </li>\r\n                    <li class=\"lss\">\r\n                        <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\" fill=\"currentColor\" class=\"bi bi-caret-right-fill\" viewBox=\"0 0 16 16\" style=\"vertical-align: sub\">\r\n                            <path d=\"M12.14 8.753l-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z\" class=\"a1\"/>\r\n                        </svg>\r\n                        <a href=\"#\">远程连接解决方案</a>\r\n                    </li>\r\n                </ul>\r\n            </div>\r\n            <div class=\"main-in-two\">\r\n                <img alt=\"140x140\" src=\"../img/test.jpg\" width=\"250px\" height=\"250px\" style=\"margin-top: 10%\"/>\r\n            </div>\r\n        </div>\r\n        <!--资格认证-->\r\n        <div class=\"col-md-4 column main-1-2\">\r\n            <div>\r\n                <h3 class=\"text-2\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\" fill=\"currentColor\" class=\"bi bi-grid-fill\" viewBox=\"0 0 16 16\">\r\n                    <path d=\"M1 2.5A1.5 1.5 0 0 1 2.5 1h3A1.5 1.5 0 0 1 7 2.5v3A1.5 1.5 0 0 1 5.5 7h-3A1.5 1.5 0 0 1 1 5.5v-3zm8 0A1.5 1.5 0 0 1 10.5 1h3A1.5 1.5 0 0 1 15 2.5v3A1.5 1.5 0 0 1 13.5 7h-3A1.5 1.5 0 0 1 9 5.5v-3zm-8 8A1.5 1.5 0 0 1 2.5 9h3A1.5 1.5 0 0 1 7 10.5v3A1.5 1.5 0 0 1 5.5 15h-3A1.5 1.5 0 0 1 1 13.5v-3zm8 0A1.5 1.5 0 0 1 10.5 9h3a1.5 1.5 0 0 1 1.5 1.5v3a1.5 1.5 0 0 1-1.5 1.5h-3A1.5 1.5 0 0 1 9 13.5v-3z\" style=\"color: #0087bd\"/>\r\n                </svg>&nbsp资格认证\r\n                </h3>\r\n            </div>\r\n            <div class=\"di-1 di-3\">\r\n                <div>\r\n                    <img alt=\"140x140\" src=\"../img/test.jpg\" width=\"250px\" height=\"250px\"/>\r\n                </div>\r\n                <div>\r\n                    <p>软件企业认证</p>\r\n                </div>\r\n            </div>\r\n            <div class=\"di-1 di-2\">\r\n                <div>\r\n                    <img alt=\"140x140\" src=\"../img/test.jpg\" width=\"250px\" height=\"250px\"/>\r\n                </div>\r\n                <div>\r\n                    <p>技术先进性服务企业认证</p>\r\n                </div>\r\n            </div>\r\n            <div class=\"di-1\">\r\n                <div>\r\n                    <img alt=\"140x140\" src=\"../img/test.jpg\" width=\"250px\" height=\"250px\"/>\r\n                </div>\r\n                <div>\r\n                    <p>技术先进性服务企业认证</p>\r\n                </div>\r\n            </div>\r\n        </div>\r\n    </div>\r\n</div>\r\n<!--尾部-->\r\n<div class=\"w-1\">\r\n    <div>\r\n        <a href=\"#\">联系我们 | </a>\r\n        <a href=\"#\">网站地图 | </a>\r\n        <a href=\"#\">个人信息保护 </a>\r\n    </div>\r\n    <hr class=\"w-1-1\">\r\n    <p>Copyright © Xi’an Ming De Software Co.,Ltd. 2008-2018 All Rights reserved   <a href=\"#\">陕ICP备09000289号</a></p>\r\n</div>\r\n<!--一键置顶-->\r\n<div class=\"t-top\" style=\"float: right;position: fixed;right: 4%;bottom: 4%\">\r\n    <a onclick=\"p_top()\">\r\n        <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\" fill=\"currentColor\" class=\"bi bi-arrow-up-square-fill\" viewBox=\"0 0 16 16\" style=\"width: 35px;height: 35px\">\r\n            <path d=\"M2 16a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2zm6.5-4.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 1 0z\"/>\r\n        </svg>\r\n    </a>\r\n</div>\r\n<script src=\"../js/main.js\" type=\"text/javascript\"></script>\r\n</body>\r\n</html>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- views/index.html	(revision 7751c37a6c7cb9b81063b6e6ef2994726ffd5be0)
++++ views/index.html	(date 1612676707879)
+@@ -12,13 +12,11 @@
+     <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+     <link href="../css/main.css" rel="stylesheet">
+     <!--页面滚动效果-->
+-<!--    <script src="http://www.lanrenzhijia.com/ajaxjs/1.10.1/jquery-1.10.1.min.js"></script>-->
+     <script src="../js/flowup.js"></script>
+-
+ </head>
+ <body>
+ <!--头部-->
+-<div class="div1" style="width: 100%;overflow: auto">
++<div class="div1" style="width: 100%;overflow: auto;">
+     <div class="container">
+         <div class="row clearfix">
+             <div class="column">
+@@ -29,10 +27,10 @@
+                     <div class="col-md-8 edge">
+                         <ul class="nav nav-pills nav-my">
+                             <li class="active">
+-                                <a href="#"><span>首页</span></a>
++                                <a href="index.html"><span>首页</span></a>
+                             </li>
+                             <li>
+-                                <a href="#"><span>公司概况</span></a>
++                                <a href="company.html"><span>公司概况</span></a>
+                             </li>
+                             <li>
+                                 <a href="#"><span>事业内容</span></a>
+Index: css/main.css
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>.main-1-2 {\r\n    width: 1100px;\r\n    height: 370px;\r\n    margin-left: 15px;\r\n    border-top:3px solid #0087bd;\r\n}\r\n.main-1 {\r\n    width:1100px;\r\n    height: 300px;\r\n    margin-left: 15px;\r\n    border-top:3px solid #0087bd;\r\n}\r\n.main-in-one {\r\n    width:500px;\r\n    float:left;\r\n    display:inline;\r\n}\r\n.main-in-two {\r\n    float:right;\r\n    display:inline;\r\n}\r\n.n1 {\r\n    float: left;\r\n    float: none;\r\n    /*display: none;*/\r\n}\r\n.n2 {\r\n    float: right;\r\n    display: block;\r\n}\r\nul {\r\n    list-style: none;\r\n    padding-left: 20px;\r\n}\r\n.lss {\r\n    border-bottom: 1px #999 dashed;\r\n}\r\n.a1 {\r\n    color: #ffb500;\r\n}\r\n.text-1 {\r\n    text-indent: 2em;\r\n}\r\n.text-2 {\r\n    font-size: 22px;\r\n    font-weight: bold;\r\n    font-family: STFangsong;\r\n}\r\n.di-1 {\r\n    display: inline-block;\r\n    margin-top: 10px;\r\n}\r\n.di-2 {\r\n    margin-right: 100px;\r\n    margin-left: 100px;\r\n}\r\n.di-3 {\r\n    margin-left: 50px;\r\n}\r\n.w-1 {\r\n    width: 100%;\r\n    height: 200px;\r\n    background: #ddd;\r\n    text-align: center;\r\n    padding-top: 30px;\r\n}\r\n.w-1-1 {\r\n    border-bottom: 2px #999 solid;\r\n    margin-top: 0px;\r\n    width: 1100px;\r\n}\r\n\r\n.edge {\r\n    padding: 0;\r\n    /* 上右下左 */\r\n    margin: 10px 0 10px 0;\r\n}\r\nspan {\r\n    color: black;\r\n    font-size: 18px;\r\n}\r\n\r\n.nav-my {\r\n}\r\n\r\n.nav-pills > li.active > a,\r\n.nav-pills > li.active > a:hover,\r\n.nav-pills > li.active > a:focus {\r\n    /*color: #fff;*/\r\n    background-color: lightblue;\r\n}\r\n\r\n.nav > li > a:hover,\r\n.nav > li > a:focus {\r\n    text-decoration: none;\r\n    background-color: lightblue;\r\n}\r\n.cons {\r\n    margin-top: 30px;\r\n}\r\n\r\n.edge {\r\n    padding: 0;\r\n    /* 上右下左 */\r\n    margin: 10px 0 10px 0;\r\n}\r\nspan {\r\n    color: black;\r\n    font-size: 18px;\r\n}\r\n\r\n.nav-my {\r\n}\r\n\r\n.nav-pills > li.active > a,\r\n.nav-pills > li.active > a:hover,\r\n.nav-pills > li.active > a:focus {\r\n    /*color: #fff;*/\r\n    background-color: lightblue;\r\n}\r\n\r\n.nav > li > a:hover,\r\n.nav > li > a:focus {\r\n    text-decoration: none;\r\n    background-color: lightblue;\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- css/main.css	(revision 7751c37a6c7cb9b81063b6e6ef2994726ffd5be0)
++++ css/main.css	(date 1612682808672)
+@@ -124,3 +124,31 @@
+     text-decoration: none;
+     background-color: lightblue;
+ }
++
++.dropdown-menu > li > a:hover,
++.dropdown-menu > li > a:focus {
++    color: #262626;
++    text-decoration: none;
++    background-color: lightblue;
++}
++
++.site-z {
++    border-bottom: 3px solid #0087bd;
++    width: 80%;
++    margin-top: 16px;
++}
++
++.site-z-1 {
++    margin-left: 20px;
++    font-size: 18px;
++    font-family: STFangsong;
++}
++
++.com-p-s {
++    margin-left: 7%;
++}
++
++.main-asb {
++    margin-top: 10px;
++    margin-left: 20%;
++}
+\ No newline at end of file
+Index: views/company.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- views/company.html	(date 1612682853642)
++++ views/company.html	(date 1612682853642)
+@@ -0,0 +1,122 @@
++<!DOCTYPE html>
++<html lang="en">
++<head>
++    <meta charset="UTF-8">
++    <title>西安明徳軟件有限公司 -- www.emdes.com.cn</title>
++    <!-- 最新的 Bootstrap 核心 CSS 文件 -->
++    <link href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
++    <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
++    <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
++    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
++    <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
++    <link href="../css/main.css" rel="stylesheet">
++    <!--页面滚动效果-->
++    <script src="../js/flowup.js"></script>
++</head>
++<body>
++<!--头部-->
++<div class="div1" style="width: 100%;overflow: auto;">
++    <div class="container">
++        <div class="row clearfix">
++            <div class="column">
++                <nav>
++                    <div class="col-md-4 edge">
++                        <img src="../img/logoTitle.png" alt="logo">
++                    </div>
++                    <div class="col-md-8 edge">
++                        <ul class="nav nav-pills nav-my">
++                            <li class="active">
++                                <a href="index.html"><span>首页</span></a>
++                            </li>
++                            <li>
++                                <a href="company.html"><span>公司概况</span></a>
++                            </li>
++                            <li>
++                                <a href="#"><span>事业内容</span></a>
++                            </li>
++                            <li>
++                                <a href="#"><span>开发体制</span></a>
++                            </li>
++                            <li>
++                                <a href="#"><span>企业文化</span></a>
++                            </li>
++                            <li>
++                                <a href="#"><span>人才招聘</span></a>
++                            </li>
++                            <li>
++                                <a href="#"><span>联系我们</span></a>
++                            </li>
++                        </ul>
++                    </div>
++                </nav>
++            </div>
++        </div>
++    </div>
++</div>
++<!--图片-->
++<div class="div2" style="width: 100%;overflow: auto;">
++    <div class="container-fluid">
++        <div class="row clearfix">
++            <div class="column">
++                <img src="../img/common.png" alt="background" width="100%" height="auto">
++            </div>
++        </div>
++    </div>
++</div>
++
++<!--主体内容部分-->
++<div class="container" style="margin-top: 30px; display: none" id="test">
++    <div class="row clearfix">
++        <!--公司概要-->
++        <div class="main-asb">
++            <a href="index.html">首页</a>
++            <svg t="1612677966234" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1515" width="17" height="17" style="vertical-align: sub">
++                <path d="M870.334 514.725l-713.943 419.15 205.529-424.557-208.254-419.193z" fill="#30afa3" p-id="1516"></path>
++            </svg>
++            <a href="company.html">公司概况</a>
++        </div>
++        <div>
++            <div class="site-z">
++                <span class="site-z-1">公司概要</span>
++            </div>
++            <div>
++                <div>
++                    <p class="com-p-s">
++                        &nbsp西安明德软件有限公司是日本EMD公司投资的中国现地法人公司，成立于2008年12月。 公司面向日本企业以及中国国内企业提供软件设计开发、技术支持服务、 系统维护服务以及咨询服务的高科技公司。
++                    </p>
++                    <br>
++                    <p class="com-p-s">
++                        公司依托EMD多年来的软件开发经验，目前为多家日本公司提供软件外包开发服务， 其中在制造、流通、医疗、金融等领域的设计开发，博得客户的高度好评。
++                    </p>
++                    <br>
++                    <p class="com-p-s">
++                        公司秉承“诚实守信、以人为本、切磋琢磨、持续改善”的行动原则， 致力于构筑中日软件开发的桥梁，为客户提供感动的高附加价值的产品和服务。
++                    </p>
++                </div>
++            </div>
++        </div>
++
++    </div>
++</div>
++
++<!--尾部-->
++<div class="w-1">
++    <div>
++        <a href="#">联系我们 | </a>
++        <a href="#">网站地图 | </a>
++        <a href="#">个人信息保护 </a>
++    </div>
++    <hr class="w-1-1">
++    <p>Copyright © Xi’an Ming De Software Co.,Ltd. 2008-2018 All Rights reserved   <a href="#">陕ICP备09000289号</a></p>
++</div>
++<!--一键置顶-->
++<div class="t-top" style="float: right;position: fixed;right: 4%;bottom: 4%">
++    <a onclick="p_top()">
++        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up-square-fill" viewBox="0 0 16 16" style="width: 35px;height: 35px">
++            <path d="M2 16a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2zm6.5-4.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 1 0z"/>
++        </svg>
++    </a>
++</div>
++<script src="../js/main.js" type="text/javascript"></script>
++</body>
++</html>
+\ No newline at end of file
