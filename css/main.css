@@ -153,6 +153,25 @@ span {
     width: 40%;
 }
 
+@media (max-width: 1650px) {
+    .clearfix:after {
+        clear: both;
+    }
+    .intro-div {
+        margin-left: 10%;
+        width: 80%;
+    }
+    .intro-img {
+        margin-top: 16px;
+        width: auto;
+    }
+
+    .p-intro {
+        margin-top: 16px;
+        width: auto;
+    }
+}
+
 .svg-list {
     float: left;
     margin-top: 5px;
@@ -219,4 +238,31 @@ span {
     height:20px;
     line-height:20px;
     background-color:#0082C1;
+}
+
+.btn-add {
+    border: none;
+    /*width: 100px;*/
+    /*border-radius: 5px;*/
+}
+.btn:focus,
+.btn:active:focus {
+    outline: none;
+}
+.code {
+    cursor: pointer;
+    float: right;
+    width: 90%;
+    margin-top: 4px;
+}
+
+.number-div {
+    height: 100%;
+    width: 40px;
+    background-color: coral;
+}
+
+.star:before {
+    content:"*";
+    color:red;
 }
