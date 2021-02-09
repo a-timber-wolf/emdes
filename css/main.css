@@ -100,6 +100,9 @@ span {
     margin-top: 30px;
 }
 
+.nav-s {
+    width: 820px;
+}
 .edge {
     padding: 0;
     /* 上右下左 */
@@ -193,9 +196,9 @@ span {
     background-color: #fcf8e3;
 }
 .th-a-1 {
-    vertical-align: text-top;
     margin-left: 12px;
     margin-right: 5px;
+    vertical-align: middle;
 }
 .th-a-2 {
     font-size: 14px;
