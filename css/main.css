@@ -96,6 +96,10 @@ span {
     text-decoration: none;
     background-color: lightblue;
 }
+.cons {
+    margin-top: 30px;
+}
+
 .nav-s {
     width: 820px;
 }
@@ -127,14 +131,40 @@ span {
 .cons {
     margin-top: 30px;
 }
+
+.clearfix:after {
+    clear: both;
+}
+.intro-div {
+    margin-left: 10%;
+    width: 80%;
+}
+.intro-img {
+    float: left;
+    margin-top: 16px;
+    margin-left: 10%;
+    width: 40%;
+}
+.p-intro {
+    float: right;
+    margin-top: 16px;
+    margin-right: 10%;
+    width: 40%;
+}
+
+.svg-list {
+    float: left;
+    margin-top: 5px;
+}
 /*首页-小标题*/
 .main-asb {
     margin-left: 20%;
-    margin-right: 20%;
     margin-top: 10px;
+    width: 60%;
 }
 .site-z {
     border-bottom: 3px solid #0087bd;
+    width: 100%;
     margin-top: 16px;
 }
 .site-z-1 {
@@ -144,7 +174,10 @@ span {
 }
 .com-p-s {
     margin-left: 7%;
-    width: 73%;
+    width: 549px;
+}
+.ads {
+    margin-top: 23px;
 }
 .map-i {
     margin-left: 15%;
@@ -189,15 +222,16 @@ span {
     margin-top: 16px;
     margin-left: 10%;
 }
-
-.p-intro {
-    float: right;
-    margin-right: 30%;
-    margin-top: 16px;
+.hand {
+    cursor: pointer;
+    float:left;
+    width:30px;
+    height:20px;
+    line-height:20px;
+    background-color:#0082C1;
 }
 
 .svg-list {
     float: left;
     margin-top: 5px;
 }
-
