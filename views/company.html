@@ -13,6 +13,12 @@
     <link href="../css/company.css" rel="stylesheet">
     <!--页面滚动效果-->
     <script src="../js/flowup.js"></script>
+    <script>
+        $(document).ready(function () {
+            const parameter = window.location.search;
+            console.log(parameter);
+        })
+    </script>
 </head>
 <body>
 <!--头部-->
@@ -96,7 +102,7 @@
             </div>
         </div>
     </div>
-    <div>
+    <div id="generalSituation">
         <div class="site-z">
             <span class="site-z-1">公司概况</span>
         </div>
@@ -130,7 +136,7 @@
             </div>
         </div>
     </div>
-    <div>
+    <div id="associated">
         <div class="site-z">
             <span class="site-z-1">关联企业</span>
         </div>
