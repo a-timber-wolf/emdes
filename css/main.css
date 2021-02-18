@@ -179,6 +179,7 @@ span {
 /*首页-小标题*/
 .main-asb {
     margin-left: 20%;
+    margin-right: 20%;
     margin-top: 10px;
     width: 60%;
 }
@@ -195,6 +196,9 @@ span {
 .com-p-s {
     margin-left: 7%;
     width: 86%;
+}
+.ads {
+    margin-top: 23px;
 }
 .map-i {
     margin-left: 15%;
