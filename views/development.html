@@ -48,7 +48,7 @@
                                 <a href="contacts.html" class="lang" id="lx" style="font-size: 18px;color: black"><span>联系我们</span></a>
                             </li>
                             <li>
-                                <a id="l-contacts"><span>中 | 日</span></a>
+                                <a id="l-contacts" style="cursor: pointer"><span>中 | 日</span></a>
                             </li>
                         </ul>
                     </div>
@@ -150,7 +150,7 @@
 </div>
 <!--总部-->
 <div class="" style="float: right;position: fixed;right: 2%;top: 35%">
-    <a href="https://www.emdes.co.jp/" class="newsCon" target="_blank"><img src="../img/lefttitle.png" alt="First"></a>
+    <a href="https://www.emdes.co.jp/" class="newsCon" target="_blank"><img id="img_deve" src="../img/lefttitle.png" alt="First"></a>
 </div>
 <!--尾部-->
 <div class="w-1">
@@ -175,6 +175,11 @@
 <script src="../js/language.js" type="text/javascript"></script>
 <script type="text/javascript">
     $("#l-contacts").click(function(){
+        if ($(".newsCon img").attr("src") === "../img/lefttitle.png") {
+            $("#img_deve").attr("src", "../img/lefttitle2.png");
+        } else {
+            $("#img_deve").attr("src", "../img/lefttitle.png");
+        }
         fds();
     });
 </script>

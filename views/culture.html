@@ -47,7 +47,7 @@
                                 <a href="contacts.html" class="lang" id="lx" style="font-size: 18px;color: black"><span>联系我们</span></a>
                             </li>
                             <li>
-                                <a id="l-contacts"><span>中 | 日</span></a>
+                                <a id="l-contacts" style="cursor: pointer"><span>中 | 日</span></a>
                             </li>
                         </ul>
                     </div>
@@ -76,7 +76,7 @@
             <span class="site-z-1 lang" id="gszz">公司宗旨</span>
         </div>
         <div class="cult-1">
-            <img alt="140x140" src="../img/qywh.gif" width="479px" height="175px"/>
+            <img id="img-change" alt="140x140" src="../img/qywh.gif" width="479px" height="175px"/>
         </div>
     </div>
     <div>
@@ -108,7 +108,7 @@
 </div>
 <!--总部-->
 <div class="" style="float: right;position: fixed;right: 2%;top: 35%">
-    <a href="https://www.emdes.co.jp/" class="newsCon" target="_blank"><img src="../img/lefttitle.png" alt="First"></a>
+    <a href="https://www.emdes.co.jp/" class="newsCon" target="_blank"><img id="img_cul" src="../img/lefttitle.png" alt="First"></a>
 </div>
 <!--尾部-->
 <div class="w-1">
@@ -133,6 +133,16 @@
 <script src="../js/language.js" type="text/javascript"></script>
 <script type="text/javascript">
     $("#l-contacts").click(function(){
+        if ($(".cult-1 img").attr("src") === "../img/qywh.gif") {
+            $("#img-change").attr("src", "../img/qywhJ.gif");
+        } else {
+            $("#img-change").attr("src", "../img/qywh.gif");
+        }
+        if ($(".newsCon img").attr("src") === "../img/lefttitle.png") {
+            $("#img_cul").attr("src", "../img/lefttitle2.png");
+        } else {
+            $("#img_cul").attr("src", "../img/lefttitle.png");
+        }
         fds();
     });
 </script>
