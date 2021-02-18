@@ -8,12 +8,14 @@
     width:1100px;
     height: 300px;
     margin-left: 15px;
+    margin-top: 2px;
     border-top:3px solid #0087bd;
 }
 .main-in-one {
     width:500px;
     float:left;
     display:inline;
+    margin-top: 5px;
 }
 .main-in-two {
     float:right;
@@ -34,6 +36,7 @@ ul {
 }
 .lss {
     border-bottom: 1px #999 dashed;
+    margin-top: 7px;
 }
 .a1 {
     color: #ffb500;
@@ -70,7 +73,6 @@ ul {
     margin-top: 0;
     width: 1100px;
 }
-
 .edge {
     padding: 0;
     /* 上右下左 */
@@ -83,7 +85,6 @@ span {
 
 .nav-my {
 }
-
 .nav-pills > li.active > a,
 .nav-pills > li.active > a:hover,
 .nav-pills > li.active > a:focus {
@@ -112,17 +113,14 @@ span {
     color: black;
     font-size: 18px;
 }
-
 .nav-my {
 }
-
 .nav-pills > li.active > a,
 .nav-pills > li.active > a:hover,
 .nav-pills > li.active > a:focus {
     /*color: #fff;*/
     background-color: lightblue;
 }
-
 .nav > li > a:hover,
 .nav > li > a:focus {
     text-decoration: none;
@@ -148,11 +146,10 @@ span {
 
 .p-intro {
     float: right;
-    margin-right: 10%;
     margin-top: 16px;
+    margin-right: 10%;
     width: 40%;
 }
-
 @media (max-width: 1650px) {
     .clearfix:after {
         clear: both;
@@ -199,6 +196,7 @@ span {
 }
 .ads {
     margin-top: 23px;
+    width: 86%;
 }
 .map-i {
     margin-left: 15%;
@@ -253,6 +251,14 @@ span {
 .btn:active:focus {
     outline: none;
 }
+.hand {
+    cursor: pointer;
+    float:left;
+    width:30px;
+    height:20px;
+    line-height:20px;
+    background-color:#0082C1;
+}
 .code {
     cursor: pointer;
     float: right;
@@ -269,4 +275,8 @@ span {
 .star:before {
     content:"*";
     color:red;
+}
+.zg_c {
+    margin-top: 10px;
+    text-align: center;
 }
