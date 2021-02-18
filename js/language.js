@@ -78,7 +78,7 @@ var lang={
     company_20:["横浜开发中心","横浜開発センター"],
     company_21:["联系我们 |","アクセス |"],
     company_22:["网站地图 |","サイトマップ |"],
-    company_23:["个人信息保护","個人情報"],
+    company_23:["个人信息保护","個人情報"]
 },flag=1;
 function fds() {
     function f() {
