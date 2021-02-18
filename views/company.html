@@ -13,6 +13,12 @@
     <link href="../css/company.css" rel="stylesheet">
     <!--页面滚动效果-->
     <script src="../js/flowup.js"></script>
+    <script>
+        $(document).ready(function () {
+            const parameter = window.location.search;
+            console.log(parameter);
+        })
+    </script>
 </head>
 <body>
 <!--头部-->
@@ -26,7 +32,7 @@
                             <img src="../img/logoTitle.png" alt="logo">
                         </a>
                     </div>
-                    <div class="col-md-8 edge" >
+                    <div class="col-md-8 edge">
                         <ul class="nav nav-pills nav-my" id="ul_header">
                             <li>
                                 <a href="index.html"><span>首页</span></a>
@@ -85,6 +91,7 @@
                 <p class="com-p-s"><br>
                     &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp西安明德软件有限公司是日本EMD公司投资的中国现地法人公司，成立于2008年12月。 公司面向日本企业以及中国国内企业提供软件设计开发、技术支持服
                     务、 系统维护服务以及咨询服务的高科技公司。
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp西安明德软件有限公司是日本EMD公司投资的中国现地法人公司，成立于2008年12月。 公司面向日本企业以及中国国内企业提供软件设计开发、技术支持服务、 系统维护服务以及咨询服务的高科技公司。
                 </p>
                 <br>
                 <p class="com-p-s">
@@ -97,7 +104,7 @@
             </div>
         </div>
     </div>
-    <div>
+    <div id="generalSituation">
         <div class="site-z">
             <span class="site-z-1">公司概况</span>
         </div>
@@ -131,7 +138,7 @@
             </div>
         </div>
     </div>
-    <div>
+    <div id="associated">
         <div class="site-z">
             <span class="site-z-1">关联企业</span>
         </div>
@@ -250,12 +257,6 @@
     </a>
 </div>
 <script src="../js/main.js" type="text/javascript"></script>
-
-<div>
-    <a class="lang" name="shou">首页</a>
-    <a class="lang" name="you">优势</a>
-    <a class="lang" name="jia">价格</a>
-</div>
 <script src="../js/language.js" type="text/javascript"></script>
 <script type="text/javascript">
     $("#l-company").click(function(){

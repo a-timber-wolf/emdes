@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Translate Test</title>
+    <!-- 最新的 Bootstrap 核心 CSS 文件 -->
+    <link href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+    <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div>
+    <a class="lang" id="sy">首页</a>
+    <a class="lang" id="gs">公司概况</a>
+</div>
+<a id="l-contacts"><span style="cursor: pointer">中 | 日</span></a>
+<script type="text/javascript">
+    let lang = {
+        sy: ["首页", "トップページ"],
+        gs: ["公司概况", "会社概况"],
+        shiy: ["事业内容", "事業内容"],
+        kf: ["开发体制", "開発体制"],
+        qy: ["企业文化", "企業文化"],
+        lx: ["联系我们", "人材募集"],
+        sy_1: ["首页", "トップページ"],
+        lxwm: ["联系我们", "アクセス"],
+        lxdz: ["联系地址", "所在地"],
+        lxdznr: ["公司名称：西安明德软件有限公司" +
+        "公司地址：西安市高新技术产业开发区科技二路72号 西安软件园西岳阁406室  \ufeff \ufeff \ufeff \ufeff \ufeff \ufeff \ufeff \ufeff \ufeff \ufeff \ufeff \ufeff \ufeff \ufeff \ufeff \ufeff \ufeff \ufeff \ufeff" +
+        "邮政编码：710075　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　" +
+        "电话：029-87607523　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 " +
+        "邮箱：info@emdes.com.cn ", "会社名称：西安明徳軟件有限公司　　　　　　　　　　　　　　　　　　　　　　　　" +
+        "所在地：〒710075　西安高新区科技二路72号西安ソフトウェアパーク西岳閣406室" +
+        "TEL：(86)-29-87607523 \ufeff \ufeff \ufeff \ufeff \ufeff \ufeff \ufeff \ufeff \ufeff \ufeff \ufeff \ufeff \ufeff \ufeff \ufeff \ufeff \ufeff \ufeff \ufeff \ufeff \ufeff \ufeff \ufeff \ufeff \ufeff \ufeff \ufeff \ufeff \ufeff \ufeff \ufeff \ufeff \ufeff \ufeff \ufeff \ufeff \ufeff \ufeff \ufeff \ufeff \ufeff \ufeff \ufeff \ufeff \ufeff \ufeff \ufeff \ufeff \ufeff　\ufeff　\ufeff　\ufeff　\ufeff　\ufeff　\ufeff　\ufeff　\ufeff　\ufeff　\ufeff　\ufeff　\ufeff \ufeff \ufeff \ufeff \ufeff \ufeff \ufeff \ufeff \ufeff \ufeff" +
+        "email：info@emdes.com.cn"],
+        dtdw: ["地图定位", "アクセスマップ"],
+        lxwm_1: ["联系我们|", "アクセス|"],
+        wzdt: ["网站地图|", "サイトマップ|"],
+        qywh: ["企业文化", "企業文化"],
+        gszz: ["公司宗旨", "会社目的"],
+        czgz: ["成长规则", "社員成長"],
+        gshd: ["公司活动", "会社活動"]
+
+    }, flag = 1;
+    // $("#ddd").click(function(){
+    //     const arr = $(".lang");
+    //     for(let i=0; i<arr.length; i++){
+    //         const id = arr.eq(i).attr("id");
+    //         arr.eq(i).text(lang[id][flag]);
+    //         const length = $(id).length;
+    //         // if () {
+    //         //
+    //         // }
+    //     }
+    //     flag=(++flag)%2;
+    // })
+
+    $("#l-contacts").click(function(){
+        fds();
+    });
+    function fds() {
+        function f() {
+            // debugger;
+            const arr = $(".lang");
+            arr.addClass("aa");
+            for(let i=0; i<arr.length; i++){
+                const id = arr.eq(i).attr("id");
+                arr.eq(i).text(lang[id][flag]);
+            }
+            flag=(++flag)%2;
+        }
+        f();
+    }
+
+</script>
+</body>
+</html>

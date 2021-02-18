@@ -13,6 +13,7 @@
     <link href="../css/company.css" rel="stylesheet">
     <!--页面滚动效果-->
     <script src="../js/flowup.js"></script>
+    <script src="../js/Random.js"></script>
 </head>
 <body>
 <!--头部-->
@@ -72,61 +73,61 @@
         <svg x="1612677966234" class="icon" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" width="17" height="17" style="vertical-align: sub">
             <path d="M870.334 514.725l-713.943 419.15 205.529-424.557-208.254-419.193z" fill="#30afa3"></path>
         </svg>
-        <a href="company.html">公司概况</a>
-        <svg x="1612677966234" class="icon" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" width="17" height="17" style="vertical-align: sub">
-            <path d="M870.334 514.725l-713.943 419.15 205.529-424.557-208.254-419.193z" fill="#30afa3"></path>
-        </svg>
-        <a href="memorabilia.html">公司大事记</a>
+        <a href="advise.html">意见建议</a>
     </div>
     <div>
         <div class="site-z">
-            <span class="site-z-1">公司大事记</span>
+            <span class="site-z-1">意见建议</span>
         </div>
         <div>
-            <div>
+            <div style="width: 80%; margin-left: 10%" >
                 <br>
-                <ul class="com-p-s">
-                    <!--动态的添加公司最新新闻-->
-                    <li class="lss">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16" style="vertical-align: sub">
-                            <path d="M12.14 8.753l-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z" class="a1"/>
-                        </svg>
-                        <a class="n1" href="version.html">★西安明德软件有限公司的主页改版</a>
-                        <a class="n2">2021-02-04</a>
-                    </li>
-                    <li class="lss">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16" style="vertical-align: sub">
-                            <path d="M12.14 8.753l-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z" class="a1"/>
-                        </svg>
-                        <a class="n1" href="interview.html">★日本岐阜电视台采访株式会社EMD</a>
-                        <a class="n2">2021-02-04</a>
-                    </li>
-                    <li class="lss">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16" style="vertical-align: sub">
-                            <path d="M12.14 8.753l-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z" class="a1"/>
-                        </svg>
-                        <a class="n1" href="build.html">★西安明德软件有限公司成立</a>
-                        <a class="n2">2021-02-04</a>
-                    </li>
-                </ul>
+                <form class="form-horizontal">
+                    <div class="form-group">
+                        <label for="company" class="col-sm-2 control-label">公司名称：</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="company" placeholder="The company name">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="name" class="col-sm-2 control-label star">姓名：</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" required="required" id="name" placeholder="Name">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputEmail3" class="col-sm-2 control-label star">邮箱：</label>
+                        <div class="col-sm-10">
+                            <input type="email" class="form-control" required="required" id="inputEmail3" placeholder="Email">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="advise" class="col-sm-2 control-label star">意见或建议：</label>
+                        <div class="col-sm-10">
+                            <textarea class="form-control" id="advise" required="required" rows="5" placeholder="Comments or Suggestions"></textarea>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="verification" class="col-sm-2 control-label star">验证码：</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" required="required" id="verification" style="float: left;width: 8%">
+                            <div class="code">
+                                <div class="number-div">
+                                    <span id="number" onclick="numRandom()">1459</span>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-offset-2 col-sm-10">
+                            <button type="submit" class="btn btn-info btn-add">提交</button>
+                        </div>
+                    </div>
+                </form>
             </div>
         </div>
-    </div>
-    <div>
-        <div style="margin-left: 70%;">
-            <br>
-            <span style="font-size: 14px">当前页1/1</span>
-            <a href="memorabilia.html">首页</a>
-            <a href="memorabilia.html">上一页</a>
-            <a href="memorabilia.html">下一页</a>
-            <a href="memorabilia.html">最后页</a>
-            <label>
-                <select>
-                    <option selected="selected" value="1">第1页</option>
-                </select>
-            </label>
-        </div>
-
     </div>
 </div>
 
