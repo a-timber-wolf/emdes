@@ -1,20 +1,6 @@
-/* 
- * FlowUp
- *
- * Based on Eric Wenn's PullupScroll https://github.com/ericwenn/pullupscroll)
- * Changes include: 
- * - custom namespace for functions
- * - Not dependent on "$" jquery namespace
- * - Works better on items stacked on top of each other in chrome (does not flicker)
- * - Added some custom options including durations and y-displacement
- * - Added ability to control plugin via external CSS instead appending <head>
- * 
- */
-
 var dgPull = dgPull || {};
 
 (function($) {$(document).ready(function() {
-
 	$(window).scroll(dgPull.scrollFn);
 });
  })(jQuery);
@@ -69,4 +55,4 @@ dgPull.scrollFn = function() {
       el.addClass("come-in"); 
       el.removeClass("opaque");
     }});
-}
+};

@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>西安明徳軟件有限公司 -- www.emdes.com.cn</title>
+    <link rel="icon" href="../img/logo.ico" type="images/x-ico"/>
     <!-- 最新的 Bootstrap 核心 CSS 文件 -->
     <link href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
     <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
@@ -19,6 +20,8 @@
             console.log(parameter);
         })
     </script>
+    <!--引入font-awesome图标库-->
+    <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
 </head>
 <body>
 <!--头部-->
@@ -35,25 +38,25 @@
                     <div class="col-md-8 edge">
                         <ul class="nav nav-pills nav-my" id="ul_header">
                             <li>
-                                <a href="index.html"><span>首页</span></a>
+                                <a href="index.html" class="lang" id="sy" style="font-size: 18px;color: black"><span>首页</span></a>
                             </li>
                             <li class="active">
-                                <a href="company.html"><span>公司概况</span></a>
+                                <a href="company.html" class="lang" id="gs" style="font-size: 18px;color: black"><span>公司概况</span></a>
                             </li>
                             <li>
-                                <a href="introduction.html"><span>事业内容</span></a>
+                                <a href="introduction.html" class="lang" id="shiy" style="font-size: 18px;color: black"><span>事业内容</span></a>
                             </li>
                             <li>
-                                <a href="development.html"><span>开发体制</span></a>
+                                <a href="development.html" class="lang" id="kf" style="font-size: 18px;color: black"><span>开发体制</span></a>
                             </li>
                             <li>
-                                <a href="culture.html"><span>企业文化</span></a>
+                                <a href="culture.html" class="lang" id="qy" style="font-size: 18px;color: black"><span>企业文化</span></a>
                             </li>
                             <li>
-                                <a href="contacts.html"><span>联系我们</span></a>
+                                <a href="contacts.html" class="lang" id="lx" style="font-size: 18px;color: black"><span>联系我们</span></a>
                             </li>
                             <li>
-                                <a id="l-company"><span>中文 | 日文</span></a>
+                                <a id="l-contacts" style="cursor: pointer"><span>中 | 日</span></a>
                             </li>
                         </ul>
                     </div>
@@ -76,29 +79,27 @@
 <!--中间内容部分-->
 <div class="main-asb">
     <div>
-        <a href="index.html">首页</a>
+        <a href="index.html" class="lang" id="sy_1">首页</a>
         <svg x="1612677966234" class="icon" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" width="17" height="17" style="vertical-align: sub">
             <path d="M870.334 514.725l-713.943 419.15 205.529-424.557-208.254-419.193z" fill="#30afa3"></path>
         </svg>
-        <a href="company.html">公司概况</a>
+        <a href="company.html" class="lang" id="gs_1">公司概况</a>
     </div>
     <div>
         <div class="site-z">
-            <span class="site-z-1">公司摘要</span>
+            <span class="site-z-1 lang" id="company_1">公司摘要</span>
         </div>
         <div>
             <div>
-                <p class="com-p-s"><br>
-                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp西安明德软件有限公司是日本EMD公司投资的中国现地法人公司，成立于2008年12月。 公司面向日本企业以及中国国内企业提供软件设计开发、技术支持服
-                    务、 系统维护服务以及咨询服务的高科技公司。
+                <p class="com-p-s lang ads" id="company_2">
                     &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp西安明德软件有限公司是日本EMD公司投资的中国现地法人公司，成立于2008年12月。 公司面向日本企业以及中国国内企业提供软件设计开发、技术支持服务、 系统维护服务以及咨询服务的高科技公司。
                 </p>
                 <br>
-                <p class="com-p-s">
+                <p class="com-p-s lang" id="company_3">
                     &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp公司依托EMD多年来的软件开发经验，目前为多家日本公司提供软件外包开发服务， 其中在制造、流通、医疗、金融等领域的设计开发，博得客户的高度好评。
                 </p>
                 <br>
-                <p class="com-p-s">
+                <p class="com-p-s lang" id="company_4">
                     &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp公司秉承“诚实守信、以人为本、切磋琢磨、持续改善”的行动原则， 致力于构筑中日软件开发的桥梁，为客户提供感动的高附加价值的产品和服务。
                 </p>
             </div>
@@ -106,7 +107,7 @@
     </div>
     <div id="generalSituation">
         <div class="site-z">
-            <span class="site-z-1">公司概况</span>
+            <span class="site-z-1 lang" id="gs_2">公司概况</span>
         </div>
         <div>
             <div>
@@ -114,24 +115,24 @@
                 <table class="table table-hover table-bordered table-c">
                     <tbody>
                         <tr>
-                            <th>公司名称</th>
-                            <td>西安明德软件有限公司</td>
+                            <th class="lang" id="company_5">公司名称</th>
+                            <td class="lang" id="company_6">西安明德软件有限公司</td>
                         </tr>
                         <tr>
-                            <th>成立日</th>
-                            <td>2008年12月</td>
+                            <th class="lang" id="company_7">成立日</th>
+                            <td class="lang" id="company_8">2008年12月</td>
                         </tr>
                         <tr>
-                            <th>注册资金</th>
-                            <td>US$100,000</td>
+                            <th class="lang" id="company_9">注册资金</th>
+                            <td class="lang" id="company_10">US$100,000</td>
                         </tr>
                         <tr>
-                            <th>公司地址</th>
-                            <td>中国西安高新区科技二路72号西安软件园西岳阁406室</td>
+                            <th class="lang" id="company_11">公司地址</th>
+                            <td class="lang" id="company_12">中国西安高新区科技二路72号西安软件园西岳阁406室</td>
                         </tr>
                         <tr>
-                            <th>电话</th>
-                            <td>029-8760-7523</td>
+                            <th class="lang" id="company_13">电话</th>
+                            <td class="lang" id="company_14">029-8760-7523</td>
                         </tr>
                     </tbody>
                 </table>
@@ -140,7 +141,7 @@
     </div>
     <div id="associated">
         <div class="site-z">
-            <span class="site-z-1">关联企业</span>
+            <span class="site-z-1 lang" id="company_15">关联企业</span>
         </div>
         <div>
             <table class="com-p-s">
@@ -152,7 +153,7 @@
                                 <path d="M35.245158 658.68317L527.750517 13.775698l460.645434 351.811623L495.871272 1010.475472z" fill="#87a7d6"></path>
                                 <path d="M529.682592 27.242264l444.377359 340.045283-479.927547 629.470189L48.789008 656.90566 529.682592 27.242264M526.011649 0L21.739951 660.383396l476.063396 363.616604 504.271698-660.190189L526.011649 0z" fill="#87a7d6"></path>
                             </svg>
-                            <span style="font-size: 16px;">东京开发中心</span>
+                            <span class="lang" id="company_16" style="font-size: 16px;">东京开发中心</span>
                             <ul><li role="presentation" class="divider"></li></ul>
                             <p>
                                 〒171-0022<br>
@@ -168,7 +169,7 @@
                                 <path d="M35.245158 658.68317L527.750517 13.775698l460.645434 351.811623L495.871272 1010.475472z" fill="#87a7d6"></path>
                                 <path d="M529.682592 27.242264l444.377359 340.045283-479.927547 629.470189L48.789008 656.90566 529.682592 27.242264M526.011649 0L21.739951 660.383396l476.063396 363.616604 504.271698-660.190189L526.011649 0z" fill="#87a7d6"></path>
                             </svg>
-                            <span style="font-size: 16px;">东北支社仙台开发中心</span>
+                            <span class="lang" id="company_17" style="font-size: 16px;">东北支社仙台开发中心</span>
                             <ul><li role="presentation" class="divider"></li></ul>
                             <p>
                                 〒980-0803<br>
@@ -186,7 +187,7 @@
                                 <path d="M35.245158 658.68317L527.750517 13.775698l460.645434 351.811623L495.871272 1010.475472z" fill="#87a7d6"></path>
                                 <path d="M529.682592 27.242264l444.377359 340.045283-479.927547 629.470189L48.789008 656.90566 529.682592 27.242264M526.011649 0L21.739951 660.383396l476.063396 363.616604 504.271698-660.190189L526.011649 0z" fill="#87a7d6"></path>
                             </svg>
-                            <span style="font-size: 16px;">中部支社名古屋开发中心</span>
+                            <span class="lang" id="company_18" style="font-size: 16px;">中部支社名古屋开发中心</span>
                             <ul><li role="presentation" class="divider"></li></ul>
                             <p>
                                 〒460-0003<br>
@@ -202,7 +203,7 @@
                                 <path d="M35.245158 658.68317L527.750517 13.775698l460.645434 351.811623L495.871272 1010.475472z" fill="#87a7d6"></path>
                                 <path d="M529.682592 27.242264l444.377359 340.045283-479.927547 629.470189L48.789008 656.90566 529.682592 27.242264M526.011649 0L21.739951 660.383396l476.063396 363.616604 504.271698-660.190189L526.011649 0z" fill="#87a7d6"></path>
                             </svg>
-                            <span style="font-size: 16px;">埼玉开发中心</span>
+                            <span class="lang" id="company_19" style="font-size: 16px;">埼玉开发中心</span>
                             <ul><li role="presentation" class="divider"></li></ul>
                             <p>
                                 〒338-0001<br>
@@ -220,7 +221,7 @@
                                 <path d="M35.245158 658.68317L527.750517 13.775698l460.645434 351.811623L495.871272 1010.475472z" fill="#87a7d6"></path>
                                 <path d="M529.682592 27.242264l444.377359 340.045283-479.927547 629.470189L48.789008 656.90566 529.682592 27.242264M526.011649 0L21.739951 660.383396l476.063396 363.616604 504.271698-660.190189L526.011649 0z" fill="#87a7d6"></path>
                             </svg>
-                            <span style="font-size: 16px;">横浜开发中心</span>
+                            <span class="lang" id="company_20" style="font-size: 16px;">横浜开发中心</span>
                             <ul><li role="presentation" class="divider"></li></ul>
                             <p>
                                 〒220-0004<br>
@@ -236,32 +237,36 @@
 </div>
 <!--总部-->
 <div class="" style="float: right;position: fixed;right: 2%;top: 35%">
-    <a href="https://www.emdes.co.jp/" class="newsCon" target="_blank"><img src="../img/lefttitle.png" alt="First"></a>
+    <a href="https://www.emdes.co.jp/" class="newsCon" target="_blank"><img id="img_change" src="../img/lefttitle.png" alt="First"></a>
 </div>
 <!--尾部-->
 <div class="w-1">
     <div>
-        <a href="contacts.html">联系我们 | </a>
-        <a href="webMap.html">网站地图 | </a>
-        <a href="protect.html">个人信息保护 </a>
+        <a href="contacts.html" class="lang" id="company_21">联系我们 | </a>
+        <a href="webMap.html" class="lang" id="company_22">网站地图 | </a>
+        <a href="protect.html" class="lang" id="company_23">个人信息保护 </a>
     </div>
     <hr class="w-1-1">
     <p>Copyright © Xi’an Ming De Software Co.,Ltd. 2008-2018 All Rights reserved   <a href="#">陕ICP备09000289号</a></p>
 </div>
 <!--一键置顶-->
-<div class="t-top" style="float: right;position: fixed;right: 4%;bottom: 4%">
+<div class="t-top" style="float: right;position: fixed;right: 4%;bottom: 4%;margin-bottom: 3%">
     <a onclick="p_top()">
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up-square-fill" viewBox="0 0 16 16" style="width: 35px;height: 35px">
-            <path d="M2 16a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2zm6.5-4.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 1 0z"/>
-        </svg>
+        <i class="fa fa-firefox" style="font-size:36px"></i>
     </a>
 </div>
 <script src="../js/main.js" type="text/javascript"></script>
+<!--网页中日文的转换-->
 <script src="../js/language.js" type="text/javascript"></script>
 <script type="text/javascript">
-    $("#l-company").click(function(){
-      fds();
-    })
+    $("#l-contacts").click(function(){
+        if ($(".newsCon img").attr("src") === "../img/lefttitle.png") {
+            $("#img_change").attr("src", "../img/lefttitle2.png");
+        } else {
+            $("#img_change").attr("src", "../img/lefttitle.png");
+        }
+        fds();
+    });
 </script>
 </body>
 </html>
