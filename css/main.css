@@ -113,7 +113,8 @@ span {
     color: black;
     font-size: 18px;
 }
-.nav-my {
+.nav-my-a{
+    width: 984px; text-align: center;
 }
 .nav-pills > li.active > a,
 .nav-pills > li.active > a:hover,
@@ -129,7 +130,6 @@ span {
 .cons {
     margin-top: 30px;
 }
-
 .clearfix:after {
     clear: both;
 }
@@ -143,7 +143,6 @@ span {
     margin-left: 10%;
     width: 40%;
 }
-
 .p-intro {
     float: right;
     margin-top: 16px;
@@ -162,7 +161,6 @@ span {
         margin-top: 16px;
         width: auto;
     }
-
     .p-intro {
         margin-top: 16px;
         width: auto;
@@ -232,6 +230,9 @@ span {
     margin-left: 10%;
     margin-top: 30px;
 }
+.clearfix:after {
+    clear: both;
+}
 
 .hand {
     cursor: pointer;
@@ -241,7 +242,6 @@ span {
     line-height:20px;
     background-color:#0082C1;
 }
-
 .btn-add {
     border: none;
     /*width: 100px;*/
@@ -265,7 +265,6 @@ span {
     width: 90%;
     margin-top: 4px;
 }
-
 .number-div {
     height: 100%;
     width: 40px;
@@ -279,4 +278,14 @@ span {
 .zg_c {
     margin-top: 10px;
     text-align: center;
+}
+.star:before {
+    content:"*";
+    color:red;
+}
+.he-a-1 {
+    width: 138px;
+}
+.th_p_1 {
+    margin-bottom: 6px;
 }

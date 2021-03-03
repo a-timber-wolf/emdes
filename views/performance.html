@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>西安明徳軟件有限公司 -- www.emdes.com.cn</title>
+    <link rel="icon" href="../img/logo.ico" type="images/x-ico"/>
     <!-- 最新的 Bootstrap 核心 CSS 文件 -->
     <link href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
     <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
@@ -15,38 +16,42 @@
     <link href="../css/company.css" rel="stylesheet">
     <!--页面滚动效果-->
     <script src="../js/flowup.js"></script>
+    <!--引入font-awesome图标库-->
+    <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
 </head>
 <body>
 <!--头部-->
 <div class="div1" style="width: 100%;overflow: auto;">
-    <div class="container">
+    <div class="container" style="width: 1284px">
         <div class="row clearfix">
             <div class="column">
                 <nav>
-                    <div class="col-md-4 edge">
-                        <img src="../img/logoTitle.png" alt="logo">
+                    <div class="col-md-4 edge" style="width: 339px">
+                        <a href="index.html">
+                            <img src="../img/logoTitle.png" alt="logo">
+                        </a>
                     </div>
-                    <div class="col-md-8 edge" >
-                        <ul class="nav nav-pills nav-my" id="ul_header">
-                            <li>
-                                <a href="index.html"><span>首页</span></a>
+                    <div class="col-md-8 edge">
+                        <ul class="nav nav-pills nav-my nav-my-a" id="ul_header">
+                            <li class="he-a-1">
+                                <a href="index.html" class="lang" id="sy" style="font-size: 18px;color: black"><span>首页</span></a>
                             </li>
-                            <li>
-                                <a href="company.html"><span>公司概况</span></a>
+                            <li class="he-a-1">
+                                <a href="company.html" class="lang" id="gs" style="font-size: 18px;color: black"><span>公司概况</span></a>
                             </li>
-                            <li>
-                                <a href="introduction.html"><span>事业内容</span></a>
+                            <li class="he-a-1">
+                                <a href="introduction.html" class="lang" id="shiy" style="font-size: 18px;color: black"><span>事业内容</span></a>
                             </li>
-                            <li>
-                                <a href="development.html"><span>开发体制</span></a>
+                            <li class="he-a-1">
+                                <a href="development.html" class="lang" id="kf" style="font-size: 18px;color: black"><span>开发体制</span></a>
                             </li>
-                            <li>
-                                <a href="culture.html"><span>企业文化</span></a>
+                            <li class="he-a-1">
+                                <a href="culture.html" class="lang" id="qy" style="font-size: 18px;color: black"><span>企业文化</span></a>
                             </li>
-                            <li>
-                                <a href="contacts.html"><span>联系我们</span></a>
+                            <li class="he-a-1">
+                                <a href="contacts.html" class="lang" id="lx" style="font-size: 18px;color: black"><span>联系我们</span></a>
                             </li>
-                            <li>
+                            <li class="he-a-1">
                                 <a id="l-contacts" style="cursor: pointer"><span>中 | 日</span></a>
                             </li>
                         </ul>
@@ -103,21 +108,33 @@
 <!--尾部-->
 <div class="w-1">
     <div>
-        <a href="contacts.html">联系我们 | </a>
-        <a href="webMap.html">网站地图 | </a>
-        <a href="protect.html">个人信息保护 </a>
+        <a href="contacts.html" class="lang" id="lxwm_1">联系我们 |</a>
+        <a href="webMap.html" class="lang" id="wzdt">网站地图 |</a>
+        <a href="protect.html" class="lang" id="gr">个人信息保护 </a>
     </div>
     <hr class="w-1-1">
-    <p>Copyright © Xi’an Ming De Software Co.,Ltd. 2008-2018 All Rights reserved   <a href="#">陕ICP备09000289号</a></p>
+    <div>
+        <p>Copyright © Xi’an Ming De Software Co.,Ltd. 2008-2018 All Rights reserved   <a href="#">陕ICP备09000289号</a></p>
+    </div>
 </div>
 <!--一键置顶-->
-<div class="t-top" style="float: right;position: fixed;right: 4%;bottom: 4%">
+<div class="t-top" style="float: right;position: fixed;right: 4%;bottom: 4%;margin-bottom: 3%">
     <a onclick="p_top()">
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up-square-fill" viewBox="0 0 16 16" style="width: 35px;height: 35px">
-            <path d="M2 16a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2zm6.5-4.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 1 0z"/>
-        </svg>
+        <i class="fa fa-firefox" style="font-size:36px"></i>
     </a>
 </div>
 <script src="../js/main.js" type="text/javascript"></script>
+<!--网页中日文的转换-->
+<script src="../js/language.js" type="text/javascript"></script>
+<script type="text/javascript">
+    $("#l-contacts").click(function(){
+        if ($(".newsCon img").attr("src") === "../img/lefttitle.png") {
+            $("#img_con").attr("src", "../img/lefttitle2.png");
+        } else {
+            $("#img_con").attr("src", "../img/lefttitle.png");
+        }
+        fds();
+    });
+</script>
 </body>
 </html>
