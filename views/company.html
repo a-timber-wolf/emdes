@@ -7,6 +7,10 @@
     <link href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
     <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
     <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+
+    <!-- jQuery Cookie 插件 -->
+    <script src="https://cdn.staticfile.org/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+
     <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
     <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link href="../css/main.css" rel="stylesheet">
@@ -258,6 +262,19 @@
 <!--网页中日文的转换-->
 <script src="../js/language.js" type="text/javascript"></script>
 <script type="text/javascript">
+
+    $(document).ready(function () {
+        if ($.cookie('switch') == null) {
+            $.cookie('switch', 0);
+            const trigger_val = $.cookie('switch');
+            console.log(trigger_val);
+        } else {
+            if ($.cookie('switch') === '1') {
+                fds();
+            }
+        }
+    });
+
     $("#l-contacts").click(function(){
         if ($(".newsCon img").attr("src") === "../img/lefttitle.png") {
             $("#img_change").attr("src", "../img/lefttitle2.png");
@@ -265,6 +282,17 @@
             $("#img_change").attr("src", "../img/lefttitle.png");
         }
         fds();
+        const trigger_value = $.cookie('switch');
+        console.log(trigger_value + " init")
+        if (trigger_value === '0') {
+            $.cookie('switch', 1);
+            const trigger_value_jan = $.cookie('switch');
+            console.log(trigger_value_jan + " end");
+        } else {
+            $.cookie('switch', 0);
+            const trigger_value_jan = $.cookie('switch');
+            console.log(trigger_value_jan + " end");
+        }
     });
 </script>
 </body>
