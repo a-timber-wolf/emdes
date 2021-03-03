@@ -73,32 +73,6 @@ ul {
     margin-top: 0;
     width: 1100px;
 }
-.edge {
-    padding: 0;
-    /* 上右下左 */
-    margin: 10px 0 10px 0;
-}
-span {
-    color: black;
-    font-size: 18px;
-}
-.nav-my {
-}
-.nav-pills > li.active > a,
-.nav-pills > li.active > a:hover,
-.nav-pills > li.active > a:focus {
-    /*color: #fff;*/
-    background-color: lightblue;
-}
-.nav > li > a:hover,
-.nav > li > a:focus {
-    text-decoration: none;
-    background-color: lightblue;
-}
-.cons {
-    margin-top: 30px;
-}
-
 .nav-s {
     width: 820px;
 }
@@ -111,7 +85,8 @@ span {
     color: black;
     font-size: 18px;
 }
-.nav-my {
+.nav-my-a{
+    width: 984px; text-align: center;
 }
 .nav-pills > li.active > a,
 .nav-pills > li.active > a:hover,
@@ -152,13 +127,12 @@ span {
     }
     .intro-div {
         margin-left: 10%;
-        width: 80%;
+        width: 90%;
     }
     .intro-img {
         margin-top: 16px;
         width: auto;
     }
-
     .p-intro {
         margin-top: 16px;
         width: auto;
@@ -277,4 +251,7 @@ span {
 .star:before {
     content:"*";
     color:red;
+}
+.he-a-1 {
+    width: 138px;
 }
