@@ -169,9 +169,13 @@
     </div>
 </div>
 <!--一键置顶-->
-<div class="t-top" style="float: right;position: fixed;right: 4%;bottom: 4%;margin-bottom: 3%">
-    <a onclick="p_top()">
-        <i class="fa fa-firefox" style="font-size:36px"></i>
+<div class="t-top" style="float: right;position: fixed;right: 4%;bottom: 4%">
+    <a onclick="p_top()" style="cursor: pointer">
+        <svg t="1614757502310" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1149" width="50" height="50">
+            <path d="M512 204.8l-273.066667 170.666667 273.066667 170.666666 273.066667-170.666666z" fill="#17abe3" p-id="1150"></path>
+            <path d="M251.426133 491.6224l-24.9856 40.7552 285.184 174.660267 285.354667-164.078934-23.825067-41.437866-260.778666 149.947733z" fill="#17abe3" p-id="1151"></path>
+            <path d="M251.426133 652.049067l-24.9856 40.7552 285.184 174.660266 285.354667-164.078933-23.825067-41.437867-260.778666 149.947734z" fill="#17abe3" p-id="1152"></path>
+        </svg>
     </a>
 </div>
 <script src="../js/main.js" type="text/javascript"></script>
@@ -185,6 +189,11 @@
             console.log(trigger_val);
         } else {
             if ($.cookie('switch') === '1') {
+                if ($(".newsCon img").attr("src") === "../img/lefttitle.png") {
+                    $("#img_deve").attr("src", "../img/lefttitle2.png");
+                } else {
+                    $("#img_deve").attr("src", "../img/lefttitle.png");
+                }
                 fds();
             }
         }
