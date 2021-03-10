@@ -71,7 +71,7 @@ ul {
 .w-1-1 {
     border-bottom: 2px #999 solid;
     margin-top: 0;
-    width: 1100px;
+    width: 80%;
 }
 .nav-s {
     width: 820px;
@@ -117,8 +117,8 @@ span {
 }
 .p-intro {
     float: right;
-    margin-right: 10%;
     margin-top: 16px;
+    margin-right: 10%;
     width: 40%;
 }
 @media (max-width: 1650px) {
@@ -127,7 +127,7 @@ span {
     }
     .intro-div {
         margin-left: 10%;
-        width: 90%;
+        width: 80%;
     }
     .intro-img {
         margin-top: 16px;
@@ -162,6 +162,18 @@ span {
 .com-p-s {
     margin-left: 7%;
     width: 86%;
+}
+.com-p-s1 {
+    margin-bottom: 25%;
+}
+.com-p-s2 {
+    width: 70%;
+    float: left;
+}
+.com-p-s3 {
+    width: 30%;
+    float: left;
+    margin-top: 1.5%;
 }
 .ads {
     margin-top: 23px;
@@ -256,5 +268,5 @@ span {
     width: 138px;
 }
 .th_p_1 {
-    margin-bottom: 6px;
+    margin-bottom: 5px;
 }

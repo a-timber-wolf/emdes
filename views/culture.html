@@ -9,6 +9,8 @@
     <link href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
     <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
     <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+    <!-- jQuery Cookie 插件 -->
+    <script src="https://cdn.staticfile.org/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
     <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
     <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link href="../css/main.css" rel="stylesheet">
@@ -86,21 +88,15 @@
         <div class="site-z">
             <span class="site-z-1 lang" id="czgz">成长规则</span>
         </div>
-        <div>
-            <p class="lang" id="czgznr" style="width: 700px;margin-top: 30px;margin-left: 10%;font-size: 14px">
-                1、技术培训<br>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;公司为新员工进行技术基础培训，让他们尽快地掌握公司的编程规范和工作流程并投入项目开发。 此外公司还定期地举行内部技术交流会和项目交流会，同时不定期地邀请国内外、 公司内外具有资深行业背景和经验的人士来公司举办专业技术讲座，实现技术交流，学习和共享。
-                <br><br>
-                2、日本研修<br>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;公司不定期地选派优秀员工和技术骨干到日本总公司参加为期半年或一年的技术研修， 以提高他们的专业技术水平、行业背景等知识。以此来提升公司的核心竞争力。 通过员工的访日研修让员工充分了解日本的历史和文化，加强双方的沟通和理解。
-                <br><br>
-                3、自我投资<br>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;公司实行以人为本的管理模式。在公司发展的同时力求发挥每个员工的各种兴趣和特长， 让员工能在公司这个平台上实现自己的梦想。要求每个员工必须不断地进行自我投资。 每半年公司为员工制定一个挑战课题的同时， 要求员工根据自我发展目标制定两个自我发展的挑战课题。公司监督并帮助完成挑战课题。 挑战课题的完成结果和人事考核直接挂钩。
-                <br><br>
-                4、日语培训<br>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;公司要求系统开发人员的日语水平达到三级以上，能读懂日文项目设计书。 要求项目组长的日语水平达二级以上，并能使用日语直接和日本技术人员进行书面沟通和交流。 公司定期开设不同水平的日语程为不同程度员工进行日语培训。 选用来自日本的日语教材和国内的IT专业日语教材，利用多媒体进行教学。
-                <br><br>
-            </p>
+        <div style="width: 700px;margin-top: 30px;margin-left: 10%;font-size: 14px;line-height: 25px">
+            <p class="lang" id="culture_1">1、技术培训</p>
+            <p class="lang" id="culture_2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;公司为新员工进行技术基础培训，让他们尽快地掌握公司的编程规范和工作流程并投入项目开发。 此外公司还定期地举行内部技术交流会和项目交流会，同时不定期地邀请国内外、 公司内外具有资深行业背景和经验的人士来公司举办专业技术讲座，实现技术交流，学习和共享。</p>
+            <p class="lang" id="culture_3">2、日本研修</p>
+            <p class="lang" id="culture_4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;公司不定期地选派优秀员工和技术骨干到日本总公司参加为期半年或一年的技术研修， 以提高他们的专业技术水平、行业背景等知识。以此来提升公司的核心竞争力。 通过员工的访日研修让员工充分了解日本的历史和文化，加强双方的沟通和理解。</p>
+            <p class="lang" id="culture_5">3、自我投资</p>
+            <p class="lang" id="culture_6">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;公司实行以人为本的管理模式。在公司发展的同时力求发挥每个员工的各种兴趣和特长， 让员工能在公司这个平台上实现自己的梦想。要求每个员工必须不断地进行自我投资。 每半年公司为员工制定一个挑战课题的同时， 要求员工根据自我发展目标制定两个自我发展的挑战课题。公司监督并帮助完成挑战课题。 挑战课题的完成结果和人事考核直接挂钩。</p>
+            <p class="lang" id="culture_7">4、日语培训</p>
+            <p class="lang" id="culture_8">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;公司要求系统开发人员的日语水平达到三级以上，能读懂日文项目设计书。 要求项目组长的日语水平达二级以上，并能使用日语直接和日本技术人员进行书面沟通和交流。 公司定期开设不同水平的日语程为不同程度员工进行日语培训。 选用来自日本的日语教材和国内的IT专业日语教材，利用多媒体进行教学。</p>
         </div>
     </div>
     <div style="margin-bottom: 50px">
@@ -126,15 +122,50 @@
     </div>
 </div>
 <!--一键置顶-->
-<div class="t-top" style="float: right;position: fixed;right: 4%;bottom: 4%;margin-bottom: 3%">
-    <a onclick="p_top()">
-        <i class="fa fa-firefox" style="font-size:36px"></i>
+<div class="t-top" style="float: right;position: fixed;right: 2%;bottom: 0%;margin-bottom: 3%;width: 40px">
+    <a href="webMap.html" style="cursor: pointer" title="查看帮助">
+        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="29" fill="currentColor" class="bi bi-calendar-check" viewBox="0 0 16 16" style="margin-top: 10px">
+            <path d="M10.854 7.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 9.793l2.646-2.647a.5.5 0 0 1 .708 0z"/>
+            <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
+        </svg>
+    </a>
+    <a href="contacts.html" style="cursor: pointer" title="联系我们">
+        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="29" fill="currentColor" class="bi bi-chat-square-text" viewBox="0 0 16 16" style="margin-top: 10px">
+            <path d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1h-2.5a2 2 0 0 0-1.6.8L8 14.333 6.1 11.8a2 2 0 0 0-1.6-.8H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h2.5a1 1 0 0 1 .8.4l1.9 2.533a1 1 0 0 0 1.6 0l1.9-2.533a1 1 0 0 1 .8-.4H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
+            <path d="M3 3.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zM3 6a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9A.5.5 0 0 1 3 6zm0 2.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5z"/>
+        </svg>
+    </a>
+    <a onclick="p_top()" style="cursor: pointer" title="返回顶部">
+        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="29" fill="currentColor" class="bi bi-arrow-up-square" viewBox="0 0 16 16" style="margin-top: 10px">
+            <path fill-rule="evenodd" d="M15 2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2zM0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm8.5 9.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z"/>
+        </svg>
     </a>
 </div>
 <script src="../js/main.js" type="text/javascript"></script>
 <!--网页中日文的转换-->
 <script src="../js/language.js" type="text/javascript"></script>
 <script type="text/javascript">
+    $(document).ready(function () {
+        if ($.cookie('switch') == null) {
+            $.cookie('switch', 0);
+            const trigger_val = $.cookie('switch');
+            console.log(trigger_val);
+        } else {
+            if ($.cookie('switch') === '1') {
+                if ($(".cult-1 img").attr("src") === "../img/qywh.gif") {
+                    $("#img-change").attr("src", "../img/qywhJ.gif");
+                } else {
+                    $("#img-change").attr("src", "../img/qywh.gif");
+                }
+                if ($(".newsCon img").attr("src") === "../img/lefttitle.png") {
+                    $("#img_cul").attr("src", "../img/lefttitle2.png");
+                } else {
+                    $("#img_cul").attr("src", "../img/lefttitle.png");
+                }
+                fds();
+            }
+        }
+    });
     $("#l-contacts").click(function(){
         if ($(".cult-1 img").attr("src") === "../img/qywh.gif") {
             $("#img-change").attr("src", "../img/qywhJ.gif");
@@ -147,6 +178,17 @@
             $("#img_cul").attr("src", "../img/lefttitle.png");
         }
         fds();
+        const trigger_value = $.cookie('switch');
+        console.log(trigger_value + " init");
+        if (trigger_value === '0') {
+            $.cookie('switch', 1);
+            const trigger_value_jan = $.cookie('switch');
+            console.log(trigger_value_jan + " end");
+        } else {
+            $.cookie('switch', 0);
+            const trigger_value_jan = $.cookie('switch');
+            console.log(trigger_value_jan + " end");
+        }
     });
 </script>
 </body>

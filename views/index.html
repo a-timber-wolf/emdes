@@ -9,6 +9,10 @@
     <link href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
     <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
     <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+
+    <!-- jQuery Cookie 插件 -->
+    <script src="https://cdn.staticfile.org/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+
     <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
     <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link href="../css/main.css" rel="stylesheet">
@@ -132,25 +136,25 @@
                             <path d="M12.14 8.753l-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z" class="a1"/>
                         </svg>
                         <a class="n1 lang" id="xwzx_a1" href="version.html">★西安明德软件有限公司的主页改版</a>
-                        <a class="n2">2021-02-04</a>
+                        <a class="n2">2016-12-09</a>
                     </li>
                     <li class="lss">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16" style="vertical-align: sub">
                             <path d="M12.14 8.753l-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z" class="a1"/>
                         </svg>
                         <a class="n1 lang" id="xwzx_a2" href="interview.html">★日本岐阜电视台采访株式会社EMD</a>
-                        <a class="n2">2021-02-04</a>
+                        <a class="n2">2009-09-10</a>
                     </li>
                     <li class="lss">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16" style="vertical-align: sub">
                             <path d="M12.14 8.753l-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z" class="a1"/>
                         </svg>
                         <a class="n1 lang" id="xwzx_a3" href="build.html">★西安明德软件有限公司成立</a>
-                        <a class="n2">2021-02-04</a>
+                        <a class="n2">2008-12-22</a>
                     </li>
                 </ul>
                 <p>
-                    <a class="btn" href="#">View details »</a>
+                    <a class="btn" href="memorabilia.html">View details »</a>
                 </p>
             </div>
             <div class="main-in-two">
@@ -247,18 +251,56 @@
     </div>
 </div>
 <!--一键置顶-->
-<div class="t-top" style="float: right;position: fixed;right: 4%;bottom: 4%;margin-bottom: 3%">
-    <a onclick="p_top()">
-        <i class="fa fa-firefox" style="font-size:36px"></i>
+<div class="t-top" style="float: right;position: fixed;right: 2%;bottom: 0%;margin-bottom: 3%;width: 40px">
+    <a href="webMap.html" style="cursor: pointer" title="查看帮助">
+        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="29" fill="currentColor" class="bi bi-calendar-check" viewBox="0 0 16 16" style="margin-top: 10px">
+            <path d="M10.854 7.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 9.793l2.646-2.647a.5.5 0 0 1 .708 0z"/>
+            <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
+        </svg>
+    </a>
+    <a href="contacts.html" style="cursor: pointer" title="联系我们">
+        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="29" fill="currentColor" class="bi bi-chat-square-text" viewBox="0 0 16 16" style="margin-top: 10px">
+            <path d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1h-2.5a2 2 0 0 0-1.6.8L8 14.333 6.1 11.8a2 2 0 0 0-1.6-.8H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h2.5a1 1 0 0 1 .8.4l1.9 2.533a1 1 0 0 0 1.6 0l1.9-2.533a1 1 0 0 1 .8-.4H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
+            <path d="M3 3.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zM3 6a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9A.5.5 0 0 1 3 6zm0 2.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5z"/>
+        </svg>
+    </a>
+    <a onclick="p_top()" style="cursor: pointer" title="返回顶部">
+        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="29" fill="currentColor" class="bi bi-arrow-up-square" viewBox="0 0 16 16" style="margin-top: 10px">
+            <path fill-rule="evenodd" d="M15 2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2zM0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm8.5 9.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z"/>
+        </svg>
     </a>
 </div>
 <script src="../js/main.js" type="text/javascript"></script>
 <!--网页中日文的转换-->
 <script src="../js/language.js" type="text/javascript"></script>
 <script type="text/javascript">
+    $(document).ready(function () {
+        if ($.cookie('switch') == null) {
+            $.cookie('switch', 0);
+            const trigger_val = $.cookie('switch');
+            //console.log(trigger_val);
+        } else {
+            if ($.cookie('switch') === '1') {
+                fds();
+            }
+        }
+    });
+
     $("#l-contacts").click(function(){
         fds();
+        const trigger_value = $.cookie('switch');
+        //console.log(trigger_value + " init")
+        if (trigger_value === '0') {
+            $.cookie('switch', 1);
+            const trigger_value_jan = $.cookie('switch');
+            //console.log(trigger_value_jan + " end");
+        } else {
+            $.cookie('switch', 0);
+            const trigger_value_jan = $.cookie('switch');
+            //console.log(trigger_value_jan + " end");
+        }
     });
+
 </script>
 </body>
 </html>
